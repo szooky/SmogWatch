@@ -15,6 +15,7 @@
 		3800136720FE4B4B00725237 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3800136520FE4B4B00725237 /* LaunchScreen.storyboard */; };
 		3800137220FE4B4B00725237 /* SmogWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800137120FE4B4B00725237 /* SmogWatchTests.swift */; };
 		3800137D20FE4B4B00725237 /* SmogWatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800137C20FE4B4B00725237 /* SmogWatchUITests.swift */; };
+		3800138E20FE50C000725237 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800138D20FE50C000725237 /* Station.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3800137820FE4B4B00725237 /* SmogWatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmogWatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3800137C20FE4B4B00725237 /* SmogWatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmogWatchUITests.swift; sourceTree = "<group>"; };
 		3800137E20FE4B4B00725237 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3800138D20FE50C000725237 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,9 @@
 		3800135820FE4B4900725237 /* SmogWatch */ = {
 			isa = PBXGroup;
 			children = (
+				3800138C20FE50A400725237 /* ViewControllers */,
+				3800138B20FE509E00725237 /* Models */,
+				3800138A20FE509400725237 /* Networking */,
 				3800135920FE4B4900725237 /* AppDelegate.swift */,
 				3800135B20FE4B4900725237 /* ViewController.swift */,
 				3800135D20FE4B4900725237 /* Main.storyboard */,
@@ -126,6 +131,28 @@
 				3800137E20FE4B4B00725237 /* Info.plist */,
 			);
 			path = SmogWatchUITests;
+			sourceTree = "<group>";
+		};
+		3800138A20FE509400725237 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		3800138B20FE509E00725237 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3800138D20FE50C000725237 /* Station.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3800138C20FE50A400725237 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +288,7 @@
 			files = (
 				3800135C20FE4B4900725237 /* ViewController.swift in Sources */,
 				3800136220FE4B4900725237 /* SmogWatch.xcdatamodeld in Sources */,
+				3800138E20FE50C000725237 /* Station.swift in Sources */,
 				3800135A20FE4B4900725237 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
