@@ -16,6 +16,11 @@
 		3800137220FE4B4B00725237 /* SmogWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800137120FE4B4B00725237 /* SmogWatchTests.swift */; };
 		3800137D20FE4B4B00725237 /* SmogWatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800137C20FE4B4B00725237 /* SmogWatchUITests.swift */; };
 		3800138E20FE50C000725237 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800138D20FE50C000725237 /* Station.swift */; };
+		3800139020FE552100725237 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800138F20FE552100725237 /* Endpoints.swift */; };
+		38D50A0F21077A95008AB8D2 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D50A0E21077A95008AB8D2 /* Request.swift */; };
+		38D50A1121077AA4008AB8D2 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D50A1021077AA4008AB8D2 /* Response.swift */; };
+		38D50A1321078E76008AB8D2 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D50A1221078E76008AB8D2 /* API.swift */; };
+		38D50A1621078F44008AB8D2 /* NetworkingTypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D50A1521078F44008AB8D2 /* NetworkingTypeAliases.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 		3800137C20FE4B4B00725237 /* SmogWatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmogWatchUITests.swift; sourceTree = "<group>"; };
 		3800137E20FE4B4B00725237 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3800138D20FE50C000725237 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		3800138F20FE552100725237 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		38D50A0E21077A95008AB8D2 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		38D50A1021077AA4008AB8D2 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		38D50A1221078E76008AB8D2 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		38D50A1521078F44008AB8D2 /* NetworkingTypeAliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingTypeAliases.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +146,9 @@
 		3800138A20FE509400725237 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				38D50A1421078F2A008AB8D2 /* Utilities */,
+				38D50A0D21077A89008AB8D2 /* Protocols */,
+				3800138F20FE552100725237 /* Endpoints.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -153,6 +166,24 @@
 			children = (
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		38D50A0D21077A89008AB8D2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				38D50A1221078E76008AB8D2 /* API.swift */,
+				38D50A0E21077A95008AB8D2 /* Request.swift */,
+				38D50A1021077AA4008AB8D2 /* Response.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		38D50A1421078F2A008AB8D2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				38D50A1521078F44008AB8D2 /* NetworkingTypeAliases.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,10 +317,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38D50A1121077AA4008AB8D2 /* Response.swift in Sources */,
 				3800135C20FE4B4900725237 /* ViewController.swift in Sources */,
 				3800136220FE4B4900725237 /* SmogWatch.xcdatamodeld in Sources */,
 				3800138E20FE50C000725237 /* Station.swift in Sources */,
 				3800135A20FE4B4900725237 /* AppDelegate.swift in Sources */,
+				38D50A0F21077A95008AB8D2 /* Request.swift in Sources */,
+				38D50A1321078E76008AB8D2 /* API.swift in Sources */,
+				38D50A1621078F44008AB8D2 /* NetworkingTypeAliases.swift in Sources */,
+				3800139020FE552100725237 /* Endpoints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
