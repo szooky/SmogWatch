@@ -6,6 +6,9 @@
 //  Copyright © 2018 Filip Szukala. All rights reserved.
 //
 
-import Foundation
+public typealias ResponseCallback<Value> = (Response<Value>) -> Void
 
-typealias RequestCompletion = (Response?, Error?) -> Void
+public enum Response<Value> {
+    case success(Value)
+    case failure(Error)
+}

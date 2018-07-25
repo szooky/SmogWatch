@@ -9,5 +9,5 @@
 import Foundation
 
 protocol API {
-    func send(_ request: Request, completion: @escaping RequestCompletion)
+    func send<T: Request>(_ request: T, completion: @escaping ResponseCallback<T.Response>)
 }
