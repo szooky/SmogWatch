@@ -20,6 +20,10 @@
 		38D50A0F21077A95008AB8D2 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D50A0E21077A95008AB8D2 /* Request.swift */; };
 		38D50A1321078E76008AB8D2 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D50A1221078E76008AB8D2 /* API.swift */; };
 		38D50A1621078F44008AB8D2 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D50A1521078F44008AB8D2 /* Response.swift */; };
+		38E7F87E210F33E8007260FD /* SmogError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E7F87D210F33E8007260FD /* SmogError.swift */; };
+		38E7F880210F350C007260FD /* SmogResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E7F87F210F350C007260FD /* SmogResponse.swift */; };
+		38F910E22108DE74002DB8F8 /* GetStations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F910E12108DE74002DB8F8 /* GetStations.swift */; };
+		38F910E5210A4667002DB8F8 /* SmogAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F910E4210A4667002DB8F8 /* SmogAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,10 @@
 		38D50A0E21077A95008AB8D2 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		38D50A1221078E76008AB8D2 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		38D50A1521078F44008AB8D2 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		38E7F87D210F33E8007260FD /* SmogError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmogError.swift; sourceTree = "<group>"; };
+		38E7F87F210F350C007260FD /* SmogResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmogResponse.swift; sourceTree = "<group>"; };
+		38F910E12108DE74002DB8F8 /* GetStations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStations.swift; sourceTree = "<group>"; };
+		38F910E4210A4667002DB8F8 /* SmogAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmogAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +117,7 @@
 		3800135820FE4B4900725237 /* SmogWatch */ = {
 			isa = PBXGroup;
 			children = (
+				3800136820FE4B4B00725237 /* Info.plist */,
 				38F910E02108D89E002DB8F8 /* Database */,
 				38F910DF2108D893002DB8F8 /* Resources */,
 				38F910DE2108D7E5002DB8F8 /* Screens */,
@@ -141,6 +150,7 @@
 		3800138A20FE509400725237 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				38F910E3210A4649002DB8F8 /* SmogAPI */,
 				38F910DC2108D7B8002DB8F8 /* Requests */,
 				38F910DB2108D7AE002DB8F8 /* Resources */,
 				38D50A1421078F2A008AB8D2 /* Utilities */,
@@ -185,6 +195,7 @@
 		38F910DC2108D7B8002DB8F8 /* Requests */ = {
 			isa = PBXGroup;
 			children = (
+				38F910E12108DE74002DB8F8 /* GetStations.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -210,7 +221,6 @@
 			isa = PBXGroup;
 			children = (
 				3800136320FE4B4B00725237 /* Assets.xcassets */,
-				3800136820FE4B4B00725237 /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -221,6 +231,16 @@
 				3800136020FE4B4900725237 /* SmogWatch.xcdatamodeld */,
 			);
 			path = Database;
+			sourceTree = "<group>";
+		};
+		38F910E3210A4649002DB8F8 /* SmogAPI */ = {
+			isa = PBXGroup;
+			children = (
+				38F910E4210A4667002DB8F8 /* SmogAPI.swift */,
+				38E7F87F210F350C007260FD /* SmogResponse.swift */,
+				38E7F87D210F33E8007260FD /* SmogError.swift */,
+			);
+			path = SmogAPI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,12 +374,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38F910E5210A4667002DB8F8 /* SmogAPI.swift in Sources */,
 				3800135C20FE4B4900725237 /* ViewController.swift in Sources */,
+				38E7F880210F350C007260FD /* SmogResponse.swift in Sources */,
 				3800136220FE4B4900725237 /* SmogWatch.xcdatamodeld in Sources */,
+				38F910E22108DE74002DB8F8 /* GetStations.swift in Sources */,
 				3800138E20FE50C000725237 /* Station.swift in Sources */,
 				3800135A20FE4B4900725237 /* AppDelegate.swift in Sources */,
 				38D50A0F21077A95008AB8D2 /* Request.swift in Sources */,
 				38D50A1321078E76008AB8D2 /* API.swift in Sources */,
+				38E7F87E210F33E8007260FD /* SmogError.swift in Sources */,
 				38D50A1621078F44008AB8D2 /* Response.swift in Sources */,
 				3800139020FE552100725237 /* Endpoints.swift in Sources */,
 			);

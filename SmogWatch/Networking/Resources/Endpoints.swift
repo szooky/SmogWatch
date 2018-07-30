@@ -10,6 +10,6 @@ import Foundation
 
 struct Endpoints {
     static let base = "http://api.gios.gov.pl/pjp-api/rest/"
-    static var stationList: String { return base + "station/findAll" }
+    static var stations: String { return base + "station/findAll" }
     static var stationData: String { return base + "data/getData/%@" }
 }

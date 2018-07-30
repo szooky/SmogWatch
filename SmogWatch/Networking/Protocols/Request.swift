@@ -9,5 +9,7 @@
 import Foundation
 
 protocol Request: Encodable {
-    var resourceName: String { get }
+    var resourcePath: String { get }
+    associatedtype Response: Decodable
 }
+

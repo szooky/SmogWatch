@@ -6,9 +6,9 @@
 //  Copyright © 2018 Filip Szukala. All rights reserved.
 //
 
-public typealias ResponseCallback<Value> = (Response<Value>) -> Void
+public typealias ResponseCallback<Value> = (Result<Value>) -> Void
 
-public enum Response<Value> {
+public enum Result<Value> {
     case success(Value)
     case failure(Error)
 }

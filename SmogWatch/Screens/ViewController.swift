@@ -12,12 +12,25 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        loadStations()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    private func loadStations() {
+        SmogAPI().send(GetStations()) { response in
+            print("GetStations finished:")
+
+            switch response {
+            case .success(let stations):
+                for station in stations {
+                    print("  Title: \(station.stationName ?? "Unnamed character")")
+                    print("  Title: \(station.id ?? 0)")
+
+                }
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
 
 

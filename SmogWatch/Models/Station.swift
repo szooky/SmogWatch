@@ -8,20 +8,20 @@
 
 import Foundation
 
-struct Station: Codable {
+struct Station: Decodable {
     let id: Int?
     let stationName, gegrLat, gegrLon: String?
     let city: City?
     let addressStreet: String?
 }
 
-struct City: Codable {
+struct City: Decodable {
     let id: Int?
     let name: String?
     let commune: Commune?
 }
 
-struct Commune: Codable {
+struct Commune: Decodable {
     let communeName, districtName, provinceName: String?
 }
 
