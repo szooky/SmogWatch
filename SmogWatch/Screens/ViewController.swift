@@ -15,11 +15,12 @@ class ViewController: UIViewController {
 
         loadStations()
         loadAirQualityIndex(for: 400)
+        loadSensors(for: 400)
     }
 
     private func loadStations() {
         SmogAPI().send(GetStations()) { response in
-            print("GetStations finished:")
+            print("\nGetStations finished:")
 
             switch response {
             case .success(let stations):
@@ -32,11 +33,24 @@ class ViewController: UIViewController {
 
     private func loadAirQualityIndex(for stationId: Int) {
         SmogAPI().send(GetStationAirQuality(stationId: stationId)) { response in
-            print("GetStationAirQuality finished:")
+            print("\nGetStationAirQuality finished:")
 
             switch response {
             case .success(let airQuality):
                 print(airQuality)
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
+
+    private func loadSensors(for stationId: Int) {
+        SmogAPI().send(GetStationSensors(stationId: stationId)) { response in
+            print("\nGetStationSensors finished:")
+
+            switch response {
+            case .success(let sensors):
+                print(sensors)
             case .failure(let error):
                 print(error)
             }
