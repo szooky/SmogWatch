@@ -8,3 +8,12 @@
 
 import Foundation
 
+struct GetStationData: Request {
+    typealias Response = SensorData
+    var resourcePath: String { return "data/getData/\(stationId)" }
+    var stationId: Int
+
+    init(stationId: Int) {
+        self.stationId = stationId
+    }
+}

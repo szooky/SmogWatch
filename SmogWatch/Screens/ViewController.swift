@@ -13,9 +13,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        loadStations()
-        loadAirQualityIndex(for: 400)
-        loadSensors(for: 400)
+//        loadStations()
+//        loadAirQualityIndex(for: 400)
+//        loadSensors(for: 400)
+        loadStationData(for: 92)
     }
 
     private func loadStations() {
@@ -24,7 +25,7 @@ class ViewController: UIViewController {
 
             switch response {
             case .success(let stations):
-                print(stations)
+                dump(stations)
             case .failure(let error):
                 print(error)
             }
@@ -37,7 +38,7 @@ class ViewController: UIViewController {
 
             switch response {
             case .success(let airQuality):
-                print(airQuality)
+                dump(airQuality)
             case .failure(let error):
                 print(error)
             }
@@ -50,11 +51,25 @@ class ViewController: UIViewController {
 
             switch response {
             case .success(let sensors):
-                print(sensors)
+                dump(sensors)
             case .failure(let error):
                 print(error)
             }
         }
     }
+
+    private func loadStationData(for stationId: Int) {
+        SmogAPI().send(GetStationData(stationId: stationId)) { response in
+            print("\nGetStationData finished:")
+
+            switch response {
+            case .success(let sensors):
+                dump(sensors)
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
+
 }
 

@@ -20,7 +20,6 @@
 		38D50A1321078E76008AB8D2 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D50A1221078E76008AB8D2 /* API.swift */; };
 		38D50A1621078F44008AB8D2 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D50A1521078F44008AB8D2 /* Response.swift */; };
 		38E7F87E210F33E8007260FD /* SmogError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E7F87D210F33E8007260FD /* SmogError.swift */; };
-		38E7F880210F350C007260FD /* SmogResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E7F87F210F350C007260FD /* SmogResponse.swift */; };
 		38E7F882210F4369007260FD /* GetStationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E7F881210F4369007260FD /* GetStationData.swift */; };
 		38E7F884210F4413007260FD /* GetStationSensors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E7F883210F4413007260FD /* GetStationSensors.swift */; };
 		38E7F886210F443B007260FD /* GetStationAirQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E7F885210F443B007260FD /* GetStationAirQuality.swift */; };
@@ -28,6 +27,8 @@
 		38E7F88A210F4741007260FD /* IndexLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E7F889210F4741007260FD /* IndexLevel.swift */; };
 		38E7F88C210F51A6007260FD /* Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E7F88B210F51A6007260FD /* Sensor.swift */; };
 		38E7F88E210F51AC007260FD /* SensorParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E7F88D210F51AC007260FD /* SensorParameters.swift */; };
+		38E7F890210F6431007260FD /* ParameterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E7F88F210F6431007260FD /* ParameterData.swift */; };
+		38E7F892210F65B4007260FD /* SensorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E7F891210F65B4007260FD /* SensorData.swift */; };
 		38F910E22108DE74002DB8F8 /* GetStations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F910E12108DE74002DB8F8 /* GetStations.swift */; };
 		38F910E5210A4667002DB8F8 /* SmogAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F910E4210A4667002DB8F8 /* SmogAPI.swift */; };
 /* End PBXBuildFile section */
@@ -69,7 +70,6 @@
 		38D50A1221078E76008AB8D2 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		38D50A1521078F44008AB8D2 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		38E7F87D210F33E8007260FD /* SmogError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmogError.swift; sourceTree = "<group>"; };
-		38E7F87F210F350C007260FD /* SmogResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmogResponse.swift; sourceTree = "<group>"; };
 		38E7F881210F4369007260FD /* GetStationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStationData.swift; sourceTree = "<group>"; };
 		38E7F883210F4413007260FD /* GetStationSensors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStationSensors.swift; sourceTree = "<group>"; };
 		38E7F885210F443B007260FD /* GetStationAirQuality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStationAirQuality.swift; sourceTree = "<group>"; };
@@ -77,6 +77,8 @@
 		38E7F889210F4741007260FD /* IndexLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexLevel.swift; sourceTree = "<group>"; };
 		38E7F88B210F51A6007260FD /* Sensor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sensor.swift; sourceTree = "<group>"; };
 		38E7F88D210F51AC007260FD /* SensorParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorParameters.swift; sourceTree = "<group>"; };
+		38E7F88F210F6431007260FD /* ParameterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterData.swift; sourceTree = "<group>"; };
+		38E7F891210F65B4007260FD /* SensorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorData.swift; sourceTree = "<group>"; };
 		38F910E12108DE74002DB8F8 /* GetStations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStations.swift; sourceTree = "<group>"; };
 		38F910E4210A4667002DB8F8 /* SmogAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmogAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -178,6 +180,8 @@
 				38E7F889210F4741007260FD /* IndexLevel.swift */,
 				38E7F88B210F51A6007260FD /* Sensor.swift */,
 				38E7F88D210F51AC007260FD /* SensorParameters.swift */,
+				38E7F891210F65B4007260FD /* SensorData.swift */,
+				38E7F88F210F6431007260FD /* ParameterData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -247,7 +251,6 @@
 			isa = PBXGroup;
 			children = (
 				38F910E4210A4667002DB8F8 /* SmogAPI.swift */,
-				38E7F87F210F350C007260FD /* SmogResponse.swift */,
 				38E7F87D210F33E8007260FD /* SmogError.swift */,
 			);
 			path = SmogAPI;
@@ -389,7 +392,6 @@
 				38E7F88C210F51A6007260FD /* Sensor.swift in Sources */,
 				38E7F888210F4736007260FD /* AirQuality.swift in Sources */,
 				3800135C20FE4B4900725237 /* ViewController.swift in Sources */,
-				38E7F880210F350C007260FD /* SmogResponse.swift in Sources */,
 				38E7F882210F4369007260FD /* GetStationData.swift in Sources */,
 				3800136220FE4B4900725237 /* SmogWatch.xcdatamodeld in Sources */,
 				38E7F886210F443B007260FD /* GetStationAirQuality.swift in Sources */,
@@ -399,9 +401,11 @@
 				3800135A20FE4B4900725237 /* AppDelegate.swift in Sources */,
 				38E7F88A210F4741007260FD /* IndexLevel.swift in Sources */,
 				38D50A0F21077A95008AB8D2 /* Request.swift in Sources */,
+				38E7F892210F65B4007260FD /* SensorData.swift in Sources */,
 				38D50A1321078E76008AB8D2 /* API.swift in Sources */,
 				38E7F87E210F33E8007260FD /* SmogError.swift in Sources */,
 				38D50A1621078F44008AB8D2 /* Response.swift in Sources */,
+				38E7F890210F6431007260FD /* ParameterData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
