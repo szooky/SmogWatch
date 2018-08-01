@@ -13,10 +13,11 @@ struct ParameterData: Decodable {
     let date: String?
 
     var formattedDate: Date? {
+        guard let dateString = date else { return nil }
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
 
-        return formatter.date(from: date) ?? nil
+        return formatter.date(from: dateString) ?? nil
     }
 }
 

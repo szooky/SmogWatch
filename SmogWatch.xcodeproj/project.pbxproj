@@ -29,6 +29,7 @@
 		38E7F88E210F51AC007260FD /* SensorParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E7F88D210F51AC007260FD /* SensorParameters.swift */; };
 		38E7F890210F6431007260FD /* ParameterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E7F88F210F6431007260FD /* ParameterData.swift */; };
 		38E7F892210F65B4007260FD /* SensorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E7F891210F65B4007260FD /* SensorData.swift */; };
+		38E7F8972111C765007260FD /* AppDelegate+BackgroundFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E7F8962111C765007260FD /* AppDelegate+BackgroundFetching.swift */; };
 		38F910E22108DE74002DB8F8 /* GetStations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F910E12108DE74002DB8F8 /* GetStations.swift */; };
 		38F910E5210A4667002DB8F8 /* SmogAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F910E4210A4667002DB8F8 /* SmogAPI.swift */; };
 /* End PBXBuildFile section */
@@ -79,6 +80,7 @@
 		38E7F88D210F51AC007260FD /* SensorParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorParameters.swift; sourceTree = "<group>"; };
 		38E7F88F210F6431007260FD /* ParameterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterData.swift; sourceTree = "<group>"; };
 		38E7F891210F65B4007260FD /* SensorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorData.swift; sourceTree = "<group>"; };
+		38E7F8962111C765007260FD /* AppDelegate+BackgroundFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+BackgroundFetching.swift"; sourceTree = "<group>"; };
 		38F910E12108DE74002DB8F8 /* GetStations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStations.swift; sourceTree = "<group>"; };
 		38F910E4210A4667002DB8F8 /* SmogAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmogAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,6 +133,7 @@
 		3800135820FE4B4900725237 /* SmogWatch */ = {
 			isa = PBXGroup;
 			children = (
+				38E7F8932111C733007260FD /* App */,
 				3800136820FE4B4B00725237 /* Info.plist */,
 				38F910E02108D89E002DB8F8 /* Database */,
 				38F910DF2108D893002DB8F8 /* Resources */,
@@ -138,7 +141,6 @@
 				38F910DD2108D7CE002DB8F8 /* Storyboards */,
 				3800138B20FE509E00725237 /* Models */,
 				3800138A20FE509400725237 /* Networking */,
-				3800135920FE4B4900725237 /* AppDelegate.swift */,
 			);
 			path = SmogWatch;
 			sourceTree = "<group>";
@@ -201,6 +203,15 @@
 				38D50A1521078F44008AB8D2 /* Response.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		38E7F8932111C733007260FD /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3800135920FE4B4900725237 /* AppDelegate.swift */,
+				38E7F8962111C765007260FD /* AppDelegate+BackgroundFetching.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 		38F910DC2108D7B8002DB8F8 /* Requests */ = {
@@ -324,6 +335,11 @@
 				TargetAttributes = {
 					3800135520FE4B4900725237 = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					3800136C20FE4B4B00725237 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -388,6 +404,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				38F910E5210A4667002DB8F8 /* SmogAPI.swift in Sources */,
+				38E7F8972111C765007260FD /* AppDelegate+BackgroundFetching.swift in Sources */,
 				38E7F88E210F51AC007260FD /* SensorParameters.swift in Sources */,
 				38E7F88C210F51A6007260FD /* Sensor.swift in Sources */,
 				38E7F888210F4736007260FD /* AirQuality.swift in Sources */,
