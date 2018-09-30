@@ -6,22 +6,26 @@
 //  Copyright © 2018 Filip Szukala. All rights reserved.
 //
 
-import Foundation
+import CoreData
 
-struct Station: Decodable {
+class Station: Decodable {
     let id: Int?
-    let stationName, gegrLat, gegrLon: String?
+    let stationName: String?
+    let gegrLat: String?
+    let gegrLon: String?
     let city: City?
     let addressStreet: String?
 }
 
-struct City: Decodable {
+class City: Decodable {
     let id: Int?
     let name: String?
     let commune: Commune?
 }
 
-struct Commune: Decodable {
-    let communeName, districtName, provinceName: String?
+class Commune: Decodable {
+    let communeName: String?
+    let districtName: String?
+    let provinceName: String?
 }
 
