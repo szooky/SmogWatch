@@ -11,7 +11,6 @@ import UIKit
 extension AppDelegate {
     func application(_ application: UIApplication, performFetchWithCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
 
-
         SmogAPI().send(GetStationData(stationId: 92)) { response in
             print("\nGetStationData finished:")
 

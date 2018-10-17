@@ -15,9 +15,24 @@
 		3800136720FE4B4B00725237 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3800136520FE4B4B00725237 /* LaunchScreen.storyboard */; };
 		3800137220FE4B4B00725237 /* SmogWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800137120FE4B4B00725237 /* SmogWatchTests.swift */; };
 		3800137D20FE4B4B00725237 /* SmogWatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800137C20FE4B4B00725237 /* SmogWatchUITests.swift */; };
-		3800138E20FE50C000725237 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800138D20FE50C000725237 /* Station.swift */; };
-		38118CF62114AD6700EE2221 /* ShopMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38118CF52114AD6700EE2221 /* ShopMapViewController.swift */; };
-		38118CF82114AD7000EE2221 /* ShopMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38118CF72114AD7000EE2221 /* ShopMapView.swift */; };
+		3806DE492176CA0500C3C1F1 /* Station+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3806DE372176CA0500C3C1F1 /* Station+CoreDataClass.swift */; };
+		3806DE4A2176CA0500C3C1F1 /* Station+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3806DE382176CA0500C3C1F1 /* Station+CoreDataProperties.swift */; };
+		3806DE4B2176CA0500C3C1F1 /* SensorParameters+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3806DE392176CA0500C3C1F1 /* SensorParameters+CoreDataClass.swift */; };
+		3806DE4C2176CA0600C3C1F1 /* SensorParameters+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3806DE3A2176CA0500C3C1F1 /* SensorParameters+CoreDataProperties.swift */; };
+		3806DE4D2176CA0600C3C1F1 /* AirQuality+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3806DE3B2176CA0500C3C1F1 /* AirQuality+CoreDataClass.swift */; };
+		3806DE4E2176CA0600C3C1F1 /* AirQuality+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3806DE3C2176CA0500C3C1F1 /* AirQuality+CoreDataProperties.swift */; };
+		3806DE4F2176CA0600C3C1F1 /* Sensor+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3806DE3D2176CA0500C3C1F1 /* Sensor+CoreDataClass.swift */; };
+		3806DE502176CA0600C3C1F1 /* Sensor+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3806DE3E2176CA0500C3C1F1 /* Sensor+CoreDataProperties.swift */; };
+		3806DE512176CA0600C3C1F1 /* Commune+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3806DE3F2176CA0500C3C1F1 /* Commune+CoreDataClass.swift */; };
+		3806DE522176CA0600C3C1F1 /* Commune+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3806DE402176CA0500C3C1F1 /* Commune+CoreDataProperties.swift */; };
+		3806DE532176CA0600C3C1F1 /* IndexLevel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3806DE412176CA0500C3C1F1 /* IndexLevel+CoreDataClass.swift */; };
+		3806DE542176CA0600C3C1F1 /* IndexLevel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3806DE422176CA0500C3C1F1 /* IndexLevel+CoreDataProperties.swift */; };
+		3806DE552176CA0600C3C1F1 /* ParameterData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3806DE432176CA0500C3C1F1 /* ParameterData+CoreDataClass.swift */; };
+		3806DE562176CA0600C3C1F1 /* ParameterData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3806DE442176CA0500C3C1F1 /* ParameterData+CoreDataProperties.swift */; };
+		3806DE572176CA0600C3C1F1 /* City+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3806DE452176CA0500C3C1F1 /* City+CoreDataClass.swift */; };
+		3806DE582176CA0600C3C1F1 /* City+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3806DE462176CA0500C3C1F1 /* City+CoreDataProperties.swift */; };
+		3806DE592176CA0600C3C1F1 /* SensorData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3806DE472176CA0500C3C1F1 /* SensorData+CoreDataClass.swift */; };
+		3806DE5A2176CA0600C3C1F1 /* SensorData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3806DE482176CA0500C3C1F1 /* SensorData+CoreDataProperties.swift */; };
 		38D50A0F21077A95008AB8D2 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D50A0E21077A95008AB8D2 /* Request.swift */; };
 		38D50A1321078E76008AB8D2 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D50A1221078E76008AB8D2 /* API.swift */; };
 		38D50A1621078F44008AB8D2 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D50A1521078F44008AB8D2 /* Response.swift */; };
@@ -25,12 +40,6 @@
 		38E7F882210F4369007260FD /* GetStationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E7F881210F4369007260FD /* GetStationData.swift */; };
 		38E7F884210F4413007260FD /* GetStationSensors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E7F883210F4413007260FD /* GetStationSensors.swift */; };
 		38E7F886210F443B007260FD /* GetStationAirQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E7F885210F443B007260FD /* GetStationAirQuality.swift */; };
-		38E7F888210F4736007260FD /* AirQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E7F887210F4736007260FD /* AirQuality.swift */; };
-		38E7F88A210F4741007260FD /* IndexLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E7F889210F4741007260FD /* IndexLevel.swift */; };
-		38E7F88C210F51A6007260FD /* Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E7F88B210F51A6007260FD /* Sensor.swift */; };
-		38E7F88E210F51AC007260FD /* SensorParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E7F88D210F51AC007260FD /* SensorParameters.swift */; };
-		38E7F890210F6431007260FD /* ParameterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E7F88F210F6431007260FD /* ParameterData.swift */; };
-		38E7F892210F65B4007260FD /* SensorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E7F891210F65B4007260FD /* SensorData.swift */; };
 		38E7F8972111C765007260FD /* AppDelegate+BackgroundFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E7F8962111C765007260FD /* AppDelegate+BackgroundFetching.swift */; };
 		38F910E22108DE74002DB8F8 /* GetStations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F910E12108DE74002DB8F8 /* GetStations.swift */; };
 		38F910E5210A4667002DB8F8 /* SmogAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F910E4210A4667002DB8F8 /* SmogAPI.swift */; };
@@ -68,9 +77,24 @@
 		3800137820FE4B4B00725237 /* SmogWatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmogWatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3800137C20FE4B4B00725237 /* SmogWatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmogWatchUITests.swift; sourceTree = "<group>"; };
 		3800137E20FE4B4B00725237 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3800138D20FE50C000725237 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
-		38118CF52114AD6700EE2221 /* ShopMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopMapViewController.swift; sourceTree = "<group>"; };
-		38118CF72114AD7000EE2221 /* ShopMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopMapView.swift; sourceTree = "<group>"; };
+		3806DE372176CA0500C3C1F1 /* Station+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Station+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3806DE382176CA0500C3C1F1 /* Station+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Station+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3806DE392176CA0500C3C1F1 /* SensorParameters+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SensorParameters+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3806DE3A2176CA0500C3C1F1 /* SensorParameters+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SensorParameters+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3806DE3B2176CA0500C3C1F1 /* AirQuality+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AirQuality+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3806DE3C2176CA0500C3C1F1 /* AirQuality+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AirQuality+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3806DE3D2176CA0500C3C1F1 /* Sensor+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sensor+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3806DE3E2176CA0500C3C1F1 /* Sensor+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sensor+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3806DE3F2176CA0500C3C1F1 /* Commune+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Commune+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3806DE402176CA0500C3C1F1 /* Commune+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Commune+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3806DE412176CA0500C3C1F1 /* IndexLevel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IndexLevel+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3806DE422176CA0500C3C1F1 /* IndexLevel+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IndexLevel+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3806DE432176CA0500C3C1F1 /* ParameterData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ParameterData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3806DE442176CA0500C3C1F1 /* ParameterData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ParameterData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3806DE452176CA0500C3C1F1 /* City+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "City+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3806DE462176CA0500C3C1F1 /* City+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "City+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3806DE472176CA0500C3C1F1 /* SensorData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SensorData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3806DE482176CA0500C3C1F1 /* SensorData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SensorData+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		38D50A0E21077A95008AB8D2 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		38D50A1221078E76008AB8D2 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		38D50A1521078F44008AB8D2 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
@@ -78,12 +102,6 @@
 		38E7F881210F4369007260FD /* GetStationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStationData.swift; sourceTree = "<group>"; };
 		38E7F883210F4413007260FD /* GetStationSensors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStationSensors.swift; sourceTree = "<group>"; };
 		38E7F885210F443B007260FD /* GetStationAirQuality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStationAirQuality.swift; sourceTree = "<group>"; };
-		38E7F887210F4736007260FD /* AirQuality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirQuality.swift; sourceTree = "<group>"; };
-		38E7F889210F4741007260FD /* IndexLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexLevel.swift; sourceTree = "<group>"; };
-		38E7F88B210F51A6007260FD /* Sensor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sensor.swift; sourceTree = "<group>"; };
-		38E7F88D210F51AC007260FD /* SensorParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorParameters.swift; sourceTree = "<group>"; };
-		38E7F88F210F6431007260FD /* ParameterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterData.swift; sourceTree = "<group>"; };
-		38E7F891210F65B4007260FD /* SensorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorData.swift; sourceTree = "<group>"; };
 		38E7F8962111C765007260FD /* AppDelegate+BackgroundFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+BackgroundFetching.swift"; sourceTree = "<group>"; };
 		38F910E12108DE74002DB8F8 /* GetStations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStations.swift; sourceTree = "<group>"; };
 		38F910E4210A4667002DB8F8 /* SmogAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmogAPI.swift; sourceTree = "<group>"; };
@@ -181,24 +199,9 @@
 		3800138B20FE509E00725237 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				3800138D20FE50C000725237 /* Station.swift */,
-				38E7F887210F4736007260FD /* AirQuality.swift */,
-				38E7F889210F4741007260FD /* IndexLevel.swift */,
-				38E7F88B210F51A6007260FD /* Sensor.swift */,
-				38E7F88D210F51AC007260FD /* SensorParameters.swift */,
-				38E7F891210F65B4007260FD /* SensorData.swift */,
-				38E7F88F210F6431007260FD /* ParameterData.swift */,
+				38DE68D4216BB53000A181DA /* CoreData+Extensions */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		38118CF42114AD5700EE2221 /* ShopMap */ = {
-			isa = PBXGroup;
-			children = (
-				38118CF52114AD6700EE2221 /* ShopMapViewController.swift */,
-				38118CF72114AD7000EE2221 /* ShopMapView.swift */,
-			);
-			path = ShopMap;
 			sourceTree = "<group>";
 		};
 		38D50A0D21077A89008AB8D2 /* Protocols */ = {
@@ -216,6 +219,31 @@
 				38D50A1521078F44008AB8D2 /* Response.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		38DE68D4216BB53000A181DA /* CoreData+Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3806DE372176CA0500C3C1F1 /* Station+CoreDataClass.swift */,
+				3806DE382176CA0500C3C1F1 /* Station+CoreDataProperties.swift */,
+				3806DE3A2176CA0500C3C1F1 /* SensorParameters+CoreDataProperties.swift */,
+				3806DE3B2176CA0500C3C1F1 /* AirQuality+CoreDataClass.swift */,
+				3806DE3E2176CA0500C3C1F1 /* Sensor+CoreDataProperties.swift */,
+				3806DE402176CA0500C3C1F1 /* Commune+CoreDataProperties.swift */,
+				3806DE422176CA0500C3C1F1 /* IndexLevel+CoreDataProperties.swift */,
+				3806DE432176CA0500C3C1F1 /* ParameterData+CoreDataClass.swift */,
+				3806DE442176CA0500C3C1F1 /* ParameterData+CoreDataProperties.swift */,
+				3806DE472176CA0500C3C1F1 /* SensorData+CoreDataClass.swift */,
+				3806DE392176CA0500C3C1F1 /* SensorParameters+CoreDataClass.swift */,
+				3806DE3C2176CA0500C3C1F1 /* AirQuality+CoreDataProperties.swift */,
+				3806DE3D2176CA0500C3C1F1 /* Sensor+CoreDataClass.swift */,
+				3806DE3F2176CA0500C3C1F1 /* Commune+CoreDataClass.swift */,
+				3806DE412176CA0500C3C1F1 /* IndexLevel+CoreDataClass.swift */,
+				3806DE452176CA0500C3C1F1 /* City+CoreDataClass.swift */,
+				3806DE462176CA0500C3C1F1 /* City+CoreDataProperties.swift */,
+				3806DE482176CA0500C3C1F1 /* SensorData+CoreDataProperties.swift */,
+			);
+			path = "CoreData+Extensions";
 			sourceTree = "<group>";
 		};
 		38E7F8932111C733007260FD /* App */ = {
@@ -250,7 +278,6 @@
 		38F910DE2108D7E5002DB8F8 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				38118CF42114AD5700EE2221 /* ShopMap */,
 				3800135B20FE4B4900725237 /* ViewController.swift */,
 			);
 			path = Screens;
@@ -421,27 +448,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				38F910E5210A4667002DB8F8 /* SmogAPI.swift in Sources */,
+				3806DE552176CA0600C3C1F1 /* ParameterData+CoreDataClass.swift in Sources */,
+				3806DE4B2176CA0500C3C1F1 /* SensorParameters+CoreDataClass.swift in Sources */,
+				3806DE562176CA0600C3C1F1 /* ParameterData+CoreDataProperties.swift in Sources */,
 				38E7F8972111C765007260FD /* AppDelegate+BackgroundFetching.swift in Sources */,
-				38E7F88E210F51AC007260FD /* SensorParameters.swift in Sources */,
-				38E7F88C210F51A6007260FD /* Sensor.swift in Sources */,
-				38E7F888210F4736007260FD /* AirQuality.swift in Sources */,
 				3800135C20FE4B4900725237 /* ViewController.swift in Sources */,
+				3806DE512176CA0600C3C1F1 /* Commune+CoreDataClass.swift in Sources */,
+				3806DE532176CA0600C3C1F1 /* IndexLevel+CoreDataClass.swift in Sources */,
 				38E7F882210F4369007260FD /* GetStationData.swift in Sources */,
+				3806DE492176CA0500C3C1F1 /* Station+CoreDataClass.swift in Sources */,
 				3800136220FE4B4900725237 /* SmogWatch.xcdatamodeld in Sources */,
 				38E7F886210F443B007260FD /* GetStationAirQuality.swift in Sources */,
-				38118CF82114AD7000EE2221 /* ShopMapView.swift in Sources */,
+				3806DE572176CA0600C3C1F1 /* City+CoreDataClass.swift in Sources */,
 				38F910E22108DE74002DB8F8 /* GetStations.swift in Sources */,
-				3800138E20FE50C000725237 /* Station.swift in Sources */,
+				3806DE4C2176CA0600C3C1F1 /* SensorParameters+CoreDataProperties.swift in Sources */,
 				38E7F884210F4413007260FD /* GetStationSensors.swift in Sources */,
+				3806DE582176CA0600C3C1F1 /* City+CoreDataProperties.swift in Sources */,
+				3806DE4F2176CA0600C3C1F1 /* Sensor+CoreDataClass.swift in Sources */,
 				3800135A20FE4B4900725237 /* AppDelegate.swift in Sources */,
-				38E7F88A210F4741007260FD /* IndexLevel.swift in Sources */,
 				38D50A0F21077A95008AB8D2 /* Request.swift in Sources */,
-				38E7F892210F65B4007260FD /* SensorData.swift in Sources */,
+				3806DE4A2176CA0500C3C1F1 /* Station+CoreDataProperties.swift in Sources */,
 				38D50A1321078E76008AB8D2 /* API.swift in Sources */,
 				38E7F87E210F33E8007260FD /* SmogError.swift in Sources */,
+				3806DE4D2176CA0600C3C1F1 /* AirQuality+CoreDataClass.swift in Sources */,
+				3806DE542176CA0600C3C1F1 /* IndexLevel+CoreDataProperties.swift in Sources */,
+				3806DE5A2176CA0600C3C1F1 /* SensorData+CoreDataProperties.swift in Sources */,
+				3806DE592176CA0600C3C1F1 /* SensorData+CoreDataClass.swift in Sources */,
+				3806DE502176CA0600C3C1F1 /* Sensor+CoreDataProperties.swift in Sources */,
 				38D50A1621078F44008AB8D2 /* Response.swift in Sources */,
-				38E7F890210F6431007260FD /* ParameterData.swift in Sources */,
-				38118CF62114AD6700EE2221 /* ShopMapViewController.swift in Sources */,
+				3806DE522176CA0600C3C1F1 /* Commune+CoreDataProperties.swift in Sources */,
+				3806DE4E2176CA0600C3C1F1 /* AirQuality+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

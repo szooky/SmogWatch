@@ -13,9 +13,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        loadStations()
-//        loadAirQualityIndex(for: 400)
-//        loadSensors(for: 400)
+        loadStations()
+        loadAirQualityIndex(for: 400)
+        loadSensors(for: 400)
         loadStationData(for: 92)
     }
 

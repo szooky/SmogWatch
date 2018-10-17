@@ -1,4 +1,96 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14315.18" systemVersion="18A391" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AirQuality" representedClassName=".AirQuality" syncable="YES">
+        <attribute name="c6H6CalcDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="c6H6SourceDataDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="coCalcDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="coSourceDataDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="no2CalcDate" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="no2SourceDataDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="o3CalcDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="o3SourceDataDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pm10CalcDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pm10SourceDataDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pm25CalcDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pm25SourceDataDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="so2CalcDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="so2SourceDataDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stCalcDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stIndexCRParam" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stIndexStatus" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="stSourceDataDate" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="c6H6IndexLevel" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IndexLevel" inverseName="c6H6AirQuality" inverseEntity="IndexLevel" syncable="YES"/>
+        <relationship name="coIndexLevel" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IndexLevel" inverseName="coAirQuailty" inverseEntity="IndexLevel" syncable="YES"/>
+        <relationship name="no2IndexLevel" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IndexLevel" inverseName="no2AirQuality" inverseEntity="IndexLevel" syncable="YES"/>
+        <relationship name="o3IndexLevel" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IndexLevel" inverseName="o3AirQuality" inverseEntity="IndexLevel" syncable="YES"/>
+        <relationship name="pm10IndexLevel" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IndexLevel" inverseName="pm10AirQuality" inverseEntity="IndexLevel" syncable="YES"/>
+        <relationship name="pm25IndexLevel" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IndexLevel" inverseName="pm25AirQuality" inverseEntity="IndexLevel" syncable="YES"/>
+        <relationship name="so2IndexLevel" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IndexLevel" inverseName="so2AirQuality" inverseEntity="IndexLevel" syncable="YES"/>
+        <relationship name="stIndexLevel" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IndexLevel" inverseName="stAirQuality" inverseEntity="IndexLevel" syncable="YES"/>
+    </entity>
+    <entity name="City" representedClassName=".City" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="commune" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Commune" inverseName="city" inverseEntity="Commune" syncable="YES"/>
+        <relationship name="station" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Station" inverseName="city" inverseEntity="Station" syncable="YES"/>
+    </entity>
+    <entity name="Commune" representedClassName=".Commune" syncable="YES">
+        <attribute name="communeName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="districtName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="provinceName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="city" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="City" inverseName="commune" inverseEntity="City" syncable="YES"/>
+    </entity>
+    <entity name="IndexLevel" representedClassName=".IndexLevel" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="indexLevelName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="c6H6AirQuality" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AirQuality" inverseName="c6H6IndexLevel" inverseEntity="AirQuality" syncable="YES"/>
+        <relationship name="coAirQuailty" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AirQuality" inverseName="coIndexLevel" inverseEntity="AirQuality" syncable="YES"/>
+        <relationship name="no2AirQuality" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AirQuality" inverseName="no2IndexLevel" inverseEntity="AirQuality" syncable="YES"/>
+        <relationship name="o3AirQuality" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AirQuality" inverseName="o3IndexLevel" inverseEntity="AirQuality" syncable="YES"/>
+        <relationship name="pm10AirQuality" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AirQuality" inverseName="pm10IndexLevel" inverseEntity="AirQuality" syncable="YES"/>
+        <relationship name="pm25AirQuality" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AirQuality" inverseName="pm25IndexLevel" inverseEntity="AirQuality" syncable="YES"/>
+        <relationship name="so2AirQuality" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AirQuality" inverseName="so2IndexLevel" inverseEntity="AirQuality" syncable="YES"/>
+        <relationship name="stAirQuality" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AirQuality" inverseName="stIndexLevel" inverseEntity="AirQuality" syncable="YES"/>
+    </entity>
+    <entity name="ParameterData" representedClassName=".ParameterData" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="sensorData" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SensorData" inverseName="parametersData" inverseEntity="SensorData" syncable="YES"/>
+    </entity>
+    <entity name="Sensor" representedClassName=".Sensor" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="stationId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="parameters" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SensorParameters" inverseName="sensor" inverseEntity="SensorParameters" syncable="YES"/>
+    </entity>
+    <entity name="SensorData" representedClassName=".SensorData" syncable="YES">
+        <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="parametersData" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ParameterData" inverseName="sensorData" inverseEntity="ParameterData" syncable="YES"/>
+    </entity>
+    <entity name="SensorParameters" representedClassName=".SensorParameters" syncable="YES">
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="formula" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="sensor" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Sensor" inverseName="parameters" inverseEntity="Sensor" syncable="YES"/>
+    </entity>
+    <entity name="Station" representedClassName=".Station" syncable="YES">
+        <attribute name="addressStreet" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stationName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="city" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="City" inverseName="station" inverseEntity="City" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="AirQuality" positionX="-136.359375" positionY="158.7109375" width="128" height="450"/>
+        <element name="City" positionX="-218.78125" positionY="-166.5078125" width="128" height="105"/>
+        <element name="Commune" positionX="-438.71484375" positionY="-181.2421875" width="128" height="105"/>
+        <element name="IndexLevel" positionX="222.62109375" positionY="512.05078125" width="147.8828125" height="195"/>
+        <element name="ParameterData" positionX="147.6875" positionY="307.09375" width="128" height="90"/>
+        <element name="Sensor" positionX="123.90625" positionY="111.8046875" width="128" height="90"/>
+        <element name="SensorData" positionX="342.953125" positionY="296.4375" width="128" height="75"/>
+        <element name="SensorParameters" positionX="119.26171875" positionY="-55.0859375" width="128" height="120"/>
+        <element name="Station" positionX="24.9609375" positionY="-195.04296875" width="128" height="135"/>
+    </elements>
 </model>
