@@ -226,34 +226,82 @@
 		38DE68D4216BB53000A181DA /* CoreData+Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				38E1B24D2177D75A00F75CEA /* Station */,
+				38E1B24D2177D75A00F75CEA /* StationGroup */,
+				38E1B24E2177D9B500F75CEA /* AirQualityGroup */,
 				3806DE3A2176CA0500C3C1F1 /* SensorParameters+CoreDataProperties.swift */,
-				3806DE3B2176CA0500C3C1F1 /* AirQuality+CoreDataClass.swift */,
 				3806DE3E2176CA0500C3C1F1 /* Sensor+CoreDataProperties.swift */,
-				3806DE422176CA0500C3C1F1 /* IndexLevel+CoreDataProperties.swift */,
 				3806DE432176CA0500C3C1F1 /* ParameterData+CoreDataClass.swift */,
 				3806DE442176CA0500C3C1F1 /* ParameterData+CoreDataProperties.swift */,
 				3806DE472176CA0500C3C1F1 /* SensorData+CoreDataClass.swift */,
 				3806DE392176CA0500C3C1F1 /* SensorParameters+CoreDataClass.swift */,
-				3806DE3C2176CA0500C3C1F1 /* AirQuality+CoreDataProperties.swift */,
 				3806DE3D2176CA0500C3C1F1 /* Sensor+CoreDataClass.swift */,
-				3806DE412176CA0500C3C1F1 /* IndexLevel+CoreDataClass.swift */,
 				3806DE482176CA0500C3C1F1 /* SensorData+CoreDataProperties.swift */,
 			);
 			path = "CoreData+Extensions";
 			sourceTree = "<group>";
 		};
-		38E1B24D2177D75A00F75CEA /* Station */ = {
+		38E1B24D2177D75A00F75CEA /* StationGroup */ = {
 			isa = PBXGroup;
 			children = (
-				3806DE372176CA0500C3C1F1 /* Station+CoreDataClass.swift */,
+				38E1B24F2177D9E200F75CEA /* Station */,
+				38E1B2502177D9F100F75CEA /* City */,
+				38E1B2512177D9FF00F75CEA /* Comunne */,
+			);
+			path = StationGroup;
+			sourceTree = "<group>";
+		};
+		38E1B24E2177D9B500F75CEA /* AirQualityGroup */ = {
+			isa = PBXGroup;
+			children = (
+				38E1B2532177DA2800F75CEA /* AirQuality */,
+				38E1B2542177DA3500F75CEA /* IndexLevel */,
+			);
+			path = AirQualityGroup;
+			sourceTree = "<group>";
+		};
+		38E1B24F2177D9E200F75CEA /* Station */ = {
+			isa = PBXGroup;
+			children = (
 				3806DE382176CA0500C3C1F1 /* Station+CoreDataProperties.swift */,
-				3806DE452176CA0500C3C1F1 /* City+CoreDataClass.swift */,
-				3806DE462176CA0500C3C1F1 /* City+CoreDataProperties.swift */,
-				3806DE3F2176CA0500C3C1F1 /* Commune+CoreDataClass.swift */,
-				3806DE402176CA0500C3C1F1 /* Commune+CoreDataProperties.swift */,
+				3806DE372176CA0500C3C1F1 /* Station+CoreDataClass.swift */,
 			);
 			path = Station;
+			sourceTree = "<group>";
+		};
+		38E1B2502177D9F100F75CEA /* City */ = {
+			isa = PBXGroup;
+			children = (
+				3806DE462176CA0500C3C1F1 /* City+CoreDataProperties.swift */,
+				3806DE452176CA0500C3C1F1 /* City+CoreDataClass.swift */,
+			);
+			path = City;
+			sourceTree = "<group>";
+		};
+		38E1B2512177D9FF00F75CEA /* Comunne */ = {
+			isa = PBXGroup;
+			children = (
+				3806DE402176CA0500C3C1F1 /* Commune+CoreDataProperties.swift */,
+				3806DE3F2176CA0500C3C1F1 /* Commune+CoreDataClass.swift */,
+			);
+			path = Comunne;
+			sourceTree = "<group>";
+		};
+		38E1B2532177DA2800F75CEA /* AirQuality */ = {
+			isa = PBXGroup;
+			children = (
+				3806DE3B2176CA0500C3C1F1 /* AirQuality+CoreDataClass.swift */,
+				3806DE3C2176CA0500C3C1F1 /* AirQuality+CoreDataProperties.swift */,
+			);
+			path = AirQuality;
+			sourceTree = "<group>";
+		};
+		38E1B2542177DA3500F75CEA /* IndexLevel */ = {
+			isa = PBXGroup;
+			children = (
+				3806DE412176CA0500C3C1F1 /* IndexLevel+CoreDataClass.swift */,
+				3806DE422176CA0500C3C1F1 /* IndexLevel+CoreDataProperties.swift */,
+			);
+			path = IndexLevel;
 			sourceTree = "<group>";
 		};
 		38E7F8932111C733007260FD /* App */ = {
