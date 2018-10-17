@@ -229,10 +229,7 @@
 				38E1B24D2177D75A00F75CEA /* StationGroup */,
 				38E1B24E2177D9B500F75CEA /* AirQualityGroup */,
 				38E1B2552177DF6A00F75CEA /* SensorDataGroup */,
-				3806DE3A2176CA0500C3C1F1 /* SensorParameters+CoreDataProperties.swift */,
-				3806DE3E2176CA0500C3C1F1 /* Sensor+CoreDataProperties.swift */,
-				3806DE392176CA0500C3C1F1 /* SensorParameters+CoreDataClass.swift */,
-				3806DE3D2176CA0500C3C1F1 /* Sensor+CoreDataClass.swift */,
+				38E1B2582177E0FA00F75CEA /* SensorGroup */,
 			);
 			path = "CoreData+Extensions";
 			sourceTree = "<group>";
@@ -326,6 +323,33 @@
 				3806DE442176CA0500C3C1F1 /* ParameterData+CoreDataProperties.swift */,
 			);
 			path = ParameterData;
+			sourceTree = "<group>";
+		};
+		38E1B2582177E0FA00F75CEA /* SensorGroup */ = {
+			isa = PBXGroup;
+			children = (
+				38E1B2592177E10A00F75CEA /* Sensor */,
+				38E1B25A2177E11100F75CEA /* SensorParameters */,
+			);
+			path = SensorGroup;
+			sourceTree = "<group>";
+		};
+		38E1B2592177E10A00F75CEA /* Sensor */ = {
+			isa = PBXGroup;
+			children = (
+				3806DE3E2176CA0500C3C1F1 /* Sensor+CoreDataProperties.swift */,
+				3806DE3D2176CA0500C3C1F1 /* Sensor+CoreDataClass.swift */,
+			);
+			path = Sensor;
+			sourceTree = "<group>";
+		};
+		38E1B25A2177E11100F75CEA /* SensorParameters */ = {
+			isa = PBXGroup;
+			children = (
+				3806DE3A2176CA0500C3C1F1 /* SensorParameters+CoreDataProperties.swift */,
+				3806DE392176CA0500C3C1F1 /* SensorParameters+CoreDataClass.swift */,
+			);
+			path = SensorParameters;
 			sourceTree = "<group>";
 		};
 		38E7F8932111C733007260FD /* App */ = {
