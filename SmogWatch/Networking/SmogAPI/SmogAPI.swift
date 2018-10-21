@@ -19,7 +19,7 @@ class SmogAPI: API {
             if let data = data {
                 do {
                     let response = try JSONDecoder().decode(T.Response.self, from: data)
-
+                    dump(response)
                     if error == nil {
                         completion(.success(response))
                     } else if let error = error {

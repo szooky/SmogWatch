@@ -22,9 +22,11 @@ public class Station: NSManagedObject, Codable {
     }
 
     public required convenience init(from decoder: Decoder) throws {
-        guard let codingUserInfoKeyManagedObjectContext = CodingUserInfoKey.managedObjectContext,
-            let managedObjectContext = decoder.userInfo[codingUserInfoKeyManagedObjectContext] as? NSManagedObjectContext,
-            let entity = NSEntityDescription.entity(forEntityName: "Station", in: managedObjectContext) else {
+        guard let managedObjectContext = decoder.userInfo[CodingUserInfoKey.managedObjectContext!] as? NSManagedObjectContext else {
+            fatalError("Failed to decode Station")
+        }
+
+        guard let entity = NSEntityDescription.entity(forEntityName: "Station", in: managedObjectContext) else {
                 fatalError("Failed to decode Station")
         }
 

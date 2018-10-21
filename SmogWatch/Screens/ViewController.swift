@@ -14,9 +14,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         loadStations()
-        loadAirQualityIndex(for: 400)
-        loadSensors(for: 400)
-        loadStationData(for: 92)
+//        loadAirQualityIndex(for: 400)
+//        loadSensors(for: 400)
+//        loadStationData(for: 92)
     }
 
     private func loadStations() {
