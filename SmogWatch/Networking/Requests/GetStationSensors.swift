@@ -9,7 +9,7 @@
 import Foundation
 
 struct GetStationSensors: Request {
-    typealias Response = [Sensor]
+    typealias Response = [CodableSensor]
     var resourcePath: String { return "station/sensors/\(stationId)" }
     var stationId: Int
 

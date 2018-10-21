@@ -16,15 +16,3 @@ struct CodableStation: Decodable {
     let city: CodableCity?
     let addressStreet: String?
 }
-
-struct CodableCity: Decodable {
-    let id: Int?
-    let name: String?
-    let commune: CodableCommune?
-}
-
-struct CodableCommune: Decodable {
-    let communeName: String?
-    let districtName: String?
-    let provinceName: String?
-}

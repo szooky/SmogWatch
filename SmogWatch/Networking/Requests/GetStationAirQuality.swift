@@ -9,7 +9,7 @@
 import Foundation
 
 struct GetStationAirQuality: Request {
-    typealias Response = AirQuality
+    typealias Response = CodableAirQuality
     var resourcePath: String { return "aqindex/getIndex/\(stationId)" }
     var stationId: Int
 

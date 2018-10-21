@@ -9,6 +9,6 @@
 import Foundation
 
 struct GetStations: Request {
-    typealias Response = [Station]
+    typealias Response = [CodableStation]
     var resourcePath: String { return "station/findAll" }
 }
