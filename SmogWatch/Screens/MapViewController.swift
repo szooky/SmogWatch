@@ -1,22 +1,22 @@
 //
-//  ViewController.swift
+//  MapViewController.swift
 //  SmogWatch
 //
-//  Created by Filip Szukala on 17/07/2018.
+//  Created by Filip Szukala on 25/10/2018.
 //  Copyright © 2018 Filip Szukala. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class MapViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         loadStations()
-//        loadAirQualityIndex(for: 400)
-//        loadSensors(for: 400)
-//        loadStationData(for: 92)
+        loadAirQualityIndex(for: 400)
+        loadSensors(for: 400)
+        loadStationData(for: 92)
     }
 
     private func loadStations() {
