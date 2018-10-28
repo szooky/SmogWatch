@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14315.18" systemVersion="18A391" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AirQuality" representedClassName="AirQuality" syncable="YES" codeGenerationType="class">
+        <attribute name="c6h6CalcDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="c6h6IndexLevelId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="c6h6IndexLevelName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="c6h6SourceDataDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="coCalcDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="coIndexLevelId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="coIndexLevelName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="coSourceDataDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="no2CalcDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="no2IndexLevelId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="no2IndexLevelName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="no2SourceDataDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="o3CalcDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="o3IndexLevelId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="o3IndexLevelName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="o3SourceDataDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pm10CalcDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pm10IndexLevelId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="pm10IndexLevelName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pm10SourceDataDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pm25CalcDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pm25IndexLevelId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="pm25IndexLevelName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pm25SourceDataDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="so2CalcDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="so2IndexLevelId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="so2IndexLevelName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="so2SourceDataDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stationId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="stCalcDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stIndexLevelId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="stIndexLevelName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stSourceDataDate" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Sensor" representedClassName="Sensor" syncable="YES" codeGenerationType="class">
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="formula" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parameterId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="stationId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="SmogData" representedClassName="SmogData" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="parameterName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stationId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Station" representedClassName="Station" syncable="YES" codeGenerationType="class">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cityId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="cityName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="commune" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="district" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="province" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Station" positionX="-63" positionY="-18" width="128" height="195"/>
+        <element name="Sensor" positionX="-54" positionY="-9" width="128" height="135"/>
+        <element name="SmogData" positionX="-36" positionY="9" width="128" height="120"/>
+        <element name="AirQuality" positionX="-18" positionY="27" width="128" height="555"/>
+    </elements>
+</model>

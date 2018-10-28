@@ -29,17 +29,12 @@
         <relationship name="so2IndexLevel" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IndexLevel" inverseName="so2AirQuality" inverseEntity="IndexLevel" syncable="YES"/>
         <relationship name="stIndexLevel" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IndexLevel" inverseName="stAirQuality" inverseEntity="IndexLevel" syncable="YES"/>
     </entity>
-    <entity name="City" representedClassName=".City" syncable="YES">
+    <entity name="Commune" representedClassName=".Commune" syncable="YES"/>
+    <entity name="Ddsds" representedClassName=".City" syncable="YES">
         <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="commune" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Commune" inverseName="city" inverseEntity="Commune" syncable="YES"/>
-        <relationship name="station" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Station" inverseName="city" inverseEntity="Station" syncable="YES"/>
-    </entity>
-    <entity name="Commune" representedClassName=".Commune" syncable="YES">
-        <attribute name="communeName" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="districtName" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="provinceName" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="city" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="City" inverseName="commune" inverseEntity="City" syncable="YES"/>
+        <relationship name="commune" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Commune" syncable="YES"/>
+        <relationship name="station" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Station" syncable="YES"/>
     </entity>
     <entity name="IndexLevel" representedClassName=".IndexLevel" syncable="YES">
         <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
@@ -80,17 +75,16 @@
         <attribute name="latitude" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="longitude" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="stationName" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="city" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="City" inverseName="station" inverseEntity="City" syncable="YES"/>
     </entity>
     <elements>
         <element name="AirQuality" positionX="-136.359375" positionY="158.7109375" width="128" height="450"/>
-        <element name="City" positionX="-218.78125" positionY="-166.5078125" width="128" height="105"/>
-        <element name="Commune" positionX="-438.71484375" positionY="-181.2421875" width="128" height="105"/>
+        <element name="Ddsds" positionX="-218.78125" positionY="-166.5078125" width="128" height="103"/>
+        <element name="Commune" positionX="-438.71484375" positionY="-181.2421875" width="128" height="43"/>
         <element name="IndexLevel" positionX="222.62109375" positionY="512.05078125" width="147.8828125" height="195"/>
         <element name="ParameterData" positionX="147.6875" positionY="307.09375" width="128" height="90"/>
         <element name="Sensor" positionX="123.90625" positionY="111.8046875" width="128" height="90"/>
         <element name="SensorData" positionX="342.953125" positionY="296.4375" width="128" height="75"/>
         <element name="SensorParameters" positionX="119.26171875" positionY="-55.0859375" width="128" height="120"/>
-        <element name="Station" positionX="24.9609375" positionY="-195.04296875" width="128" height="135"/>
+        <element name="Station" positionX="24.9609375" positionY="-195.04296875" width="128" height="118"/>
     </elements>
 </model>
