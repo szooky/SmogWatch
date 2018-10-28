@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14315.18" systemVersion="18A391" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="AirQuality" representedClassName="AirQuality" syncable="YES" codeGenerationType="class">
+    <entity name="AirQuality" representedClassName=".AirQuality" syncable="YES">
         <attribute name="c6h6CalcDate" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="c6h6IndexLevelId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="c6h6IndexLevelName" optional="YES" attributeType="String" syncable="YES"/>
@@ -36,7 +36,7 @@
         <attribute name="stIndexLevelName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="stSourceDataDate" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
-    <entity name="Sensor" representedClassName="Sensor" syncable="YES" codeGenerationType="class">
+    <entity name="Sensor" representedClassName=".Sensor" syncable="YES">
         <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="formula" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
@@ -44,14 +44,14 @@
         <attribute name="parameterId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="stationId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
     </entity>
-    <entity name="SmogData" representedClassName="SmogData" syncable="YES" codeGenerationType="class">
+    <entity name="SmogData" representedClassName=".SmogData" syncable="YES">
         <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="parameterName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="stationId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="value" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
-    <entity name="Station" representedClassName="Station" syncable="YES" codeGenerationType="class">
+    <entity name="Station" representedClassName=".Station" syncable="YES">
         <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="cityId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="cityName" optional="YES" attributeType="String" syncable="YES"/>
@@ -64,9 +64,9 @@
         <attribute name="province" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Station" positionX="-63" positionY="-18" width="128" height="195"/>
+        <element name="AirQuality" positionX="-18" positionY="27" width="128" height="555"/>
         <element name="Sensor" positionX="-54" positionY="-9" width="128" height="135"/>
         <element name="SmogData" positionX="-36" positionY="9" width="128" height="120"/>
-        <element name="AirQuality" positionX="-18" positionY="27" width="128" height="555"/>
+        <element name="Station" positionX="-63" positionY="-18" width="128" height="195"/>
     </elements>
 </model>
