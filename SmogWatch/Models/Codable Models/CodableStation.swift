@@ -30,6 +30,8 @@ extension CodableStation: CoreDatable {
                                          StationCoreDataProperties.district: city?.commune?.districtName ?? "",
                                          StationCoreDataProperties.province: city?.commune?.provinceName ?? ""]
 
-        Database.shared.save(data: newStation, as: StationCoreDataProperties.entityName)
+        Database.shared.save(data: newStation,
+                             as: StationCoreDataProperties.entityName,
+                             primaryKey: StationCoreDataProperties.id)
     }
 }

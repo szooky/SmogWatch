@@ -12,22 +12,43 @@ import CoreData
 class Database {
     static var shared = Database()
 
-    func save(data: [String: Any], as entityName: String) {
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
-        let managedContext = appDelegate.persistentContainer.viewContext
+    func save(data: [String: Any], as entityName: String, primaryKey: String) {
+        DispatchQueue.main.async {
+            guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+            guard let primaryKeyValue = data[primaryKey] as? Int else { return }
+            let managedContext = appDelegate.persistentContainer.viewContext
+            var managedObject: NSManagedObject? = nil
 
-        guard let entity = NSEntityDescription.entity(forEntityName: entityName, in: managedContext) else { return }
-        let object = NSManagedObject(entity: entity, insertInto: managedContext)
+            let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: entityName)
+            fetchRequest.fetchLimit = 1
+            fetchRequest.predicate = NSPredicate(format: "\(primaryKey) = %d", primaryKeyValue)
 
-        for (key, value) in data {
-            object.setValue(value, forKey: key)
-        }
+            do {
+                if let fetchResults = try managedContext.fetch(fetchRequest) as? [NSManagedObject] {
+                    if fetchResults.count != 0 {
+                        managedObject = fetchResults[0]
+                    }
+                }
+            } catch let error {
+                print(error.localizedDescription)
+            }
 
-        do {
-            try managedContext.save()
 
-        } catch let error as NSError {
-            print("Could not save. \(error), \(error.userInfo)")
+            if managedObject == nil {
+                guard let entity = NSEntityDescription.entity(forEntityName: entityName, in: managedContext) else { return }
+                managedObject = NSManagedObject(entity: entity, insertInto: managedContext)
+            }
+
+            for (key, value) in data {
+                managedObject!.setValue(value, forKey: key)
+            }
+
+            do {
+                try managedContext.save()
+
+            } catch let error as NSError {
+                print("Could not save. \(error), \(error.userInfo)")
+            }
         }
     }
 }
