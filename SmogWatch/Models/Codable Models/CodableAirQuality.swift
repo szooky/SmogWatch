@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct CodableAirQuality: Decodable {
+class CodableAirQuality: Decodable {
     let id: Int?
     let stCalcDate: String?
     let stIndexLevel: CodableIndexLevel?

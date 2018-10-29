@@ -31,6 +31,9 @@
 		389E0E24217D422300327A03 /* CodableSensorParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389E0E23217D422300327A03 /* CodableSensorParameters.swift */; };
 		389E0E26217D435F00327A03 /* CodableCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389E0E25217D435F00327A03 /* CodableCity.swift */; };
 		389E0E28217D437200327A03 /* CodableCommune.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389E0E27217D437200327A03 /* CodableCommune.swift */; };
+		38A7BF6B2186382300F0774A /* CoreDatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A7BF6A2186382300F0774A /* CoreDatable.swift */; };
+		38A7BF6D2186880200F0774A /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A7BF6C2186880200F0774A /* Database.swift */; };
+		38A7BF702186901D00F0774A /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A7BF6F2186901D00F0774A /* Optional.swift */; };
 		38D50A0F21077A95008AB8D2 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D50A0E21077A95008AB8D2 /* Request.swift */; };
 		38D50A1321078E76008AB8D2 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D50A1221078E76008AB8D2 /* API.swift */; };
 		38D50A1621078F44008AB8D2 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D50A1521078F44008AB8D2 /* Response.swift */; };
@@ -95,6 +98,9 @@
 		389E0E23217D422300327A03 /* CodableSensorParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableSensorParameters.swift; sourceTree = "<group>"; };
 		389E0E25217D435F00327A03 /* CodableCity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableCity.swift; sourceTree = "<group>"; };
 		389E0E27217D437200327A03 /* CodableCommune.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableCommune.swift; sourceTree = "<group>"; };
+		38A7BF6A2186382300F0774A /* CoreDatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDatable.swift; sourceTree = "<group>"; };
+		38A7BF6C2186880200F0774A /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		38A7BF6F2186901D00F0774A /* Optional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
 		38D50A0E21077A95008AB8D2 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		38D50A1221078E76008AB8D2 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		38D50A1521078F44008AB8D2 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
@@ -159,6 +165,7 @@
 		3800135820FE4B4900725237 /* SmogWatch */ = {
 			isa = PBXGroup;
 			children = (
+				38A7BF6E2186901400F0774A /* Extensions */,
 				3800136820FE4B4B00725237 /* Info.plist */,
 				38E7F8932111C733007260FD /* App */,
 				38F910E02108D89E002DB8F8 /* Database */,
@@ -203,6 +210,7 @@
 		3800138B20FE509E00725237 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				38A7BF692186381600F0774A /* Protocols */,
 				389E0E16217D14FA00327A03 /* Codable Models */,
 				38DE68D4216BB53000A181DA /* CoreData Models */,
 			);
@@ -223,6 +231,22 @@
 				389E0E23217D422300327A03 /* CodableSensorParameters.swift */,
 			);
 			path = "Codable Models";
+			sourceTree = "<group>";
+		};
+		38A7BF692186381600F0774A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				38A7BF6A2186382300F0774A /* CoreDatable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		38A7BF6E2186901400F0774A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				38A7BF6F2186901D00F0774A /* Optional.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		38D50A0D21077A89008AB8D2 /* Protocols */ = {
@@ -309,6 +333,7 @@
 			children = (
 				38443B0A2184BEFD000389E4 /* SmogDatabase.xcdatamodeld */,
 				38E1B24B2177D31800F75CEA /* CodingUserInfoKey+Extension.swift */,
+				38A7BF6C2186880200F0774A /* Database.swift */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -472,6 +497,7 @@
 				38E7F882210F4369007260FD /* GetStationData.swift in Sources */,
 				38F21BCF218234A600A7A922 /* MapViewController.swift in Sources */,
 				38E7F886210F443B007260FD /* GetStationAirQuality.swift in Sources */,
+				38A7BF6B2186382300F0774A /* CoreDatable.swift in Sources */,
 				38F910E22108DE74002DB8F8 /* GetStations.swift in Sources */,
 				38E7F884210F4413007260FD /* GetStationSensors.swift in Sources */,
 				3800135A20FE4B4900725237 /* AppDelegate.swift in Sources */,
@@ -490,9 +516,11 @@
 				38D50A1621078F44008AB8D2 /* Response.swift in Sources */,
 				38443B1521861C97000389E4 /* SmogData+CoreDataClass.swift in Sources */,
 				389E0E22217D421800327A03 /* CodableSensorData.swift in Sources */,
+				38A7BF702186901D00F0774A /* Optional.swift in Sources */,
 				38F21BD12182381F00A7A922 /* StationViewController.swift in Sources */,
 				38443B1C21861C97000389E4 /* Sensor+CoreDataProperties.swift in Sources */,
 				389E0E20217D420E00327A03 /* CodableSensor.swift in Sources */,
+				38A7BF6D2186880200F0774A /* Database.swift in Sources */,
 				389E0E26217D435F00327A03 /* CodableCity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct CodableCommune: Decodable {
+class CodableCommune: Decodable {
     let communeName: String?
     let districtName: String?
     let provinceName: String?

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct CodableIndexLevel: Codable {
+class CodableIndexLevel: Codable {
     let id: Int?
     let indexLevelName: String?
 }

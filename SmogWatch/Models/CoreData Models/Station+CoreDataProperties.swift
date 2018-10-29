@@ -12,9 +12,8 @@ import CoreData
 
 
 extension Station {
-
     @nonobjc public class func fetchRequest() -> NSFetchRequest<Station> {
-        return NSFetchRequest<Station>(entityName: "Station")
+        return NSFetchRequest<Station>(entityName: StationCoreDataProperties.entityName)
     }
 
     @NSManaged public var id: Int32
@@ -27,5 +26,18 @@ extension Station {
     @NSManaged public var commune: String?
     @NSManaged public var district: String?
     @NSManaged public var province: String?
+}
 
+class StationCoreDataProperties {
+    static let entityName = "Station"
+    static let id = "id"
+    static let name = "name"
+    static let latitude = "latitude"
+    static let longitude = "longitude"
+    static let address = "address"
+    static let cityId = "cityId"
+    static let cityName = "cityName"
+    static let commune = "commune"
+    static let district = "district"
+    static let province = "province"
 }

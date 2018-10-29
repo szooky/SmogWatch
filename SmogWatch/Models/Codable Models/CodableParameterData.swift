@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct CodableParameterData: Decodable {
+class CodableParameterData: Decodable {
     let value: Double?
     let date: String?
 

@@ -20,6 +20,13 @@ class SmogAPI: API {
                 do {
                     let response = try JSONDecoder().decode(T.Response.self, from: data)
                     dump(response)
+
+                    if let decodedResponse = response as? [CoreDatable] {
+                        decodedResponse.forEach { $0.saveToCoreData() }
+                    } else if let decodedResponse = response as? CoreDatable {
+                        decodedResponse.saveToCoreData()
+                    }
+
                     if error == nil {
                         completion(.success(response))
                     } else if let error = error {

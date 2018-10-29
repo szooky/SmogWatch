@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct CodableSensorParameters: Decodable {
+class CodableSensorParameters: Decodable {
     let name: String?
     let formula: String?
     let code: String?
