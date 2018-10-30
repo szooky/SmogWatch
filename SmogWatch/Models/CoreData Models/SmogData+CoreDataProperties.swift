@@ -12,9 +12,8 @@ import CoreData
 
 
 extension SmogData {
-
     @nonobjc public class func fetchRequest() -> NSFetchRequest<SmogData> {
-        return NSFetchRequest<SmogData>(entityName: "SmogData")
+        return NSFetchRequest<SmogData>(entityName: SmogDataCoreDataProperties.entityName)
     }
 
     @NSManaged public var id: UUID?
@@ -22,5 +21,13 @@ extension SmogData {
     @NSManaged public var parameterName: String?
     @NSManaged public var date: String?
     @NSManaged public var value: String?
+}
 
+class SmogDataCoreDataProperties {
+    static let entityName = "SmogData"
+    static let id = "id"
+    static let stationId = "stationId"
+    static let parameterName = "parameterName"
+    static let date = "date"
+    static let value = "value"
 }

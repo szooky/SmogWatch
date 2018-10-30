@@ -6,7 +6,7 @@
 //  Copyright © 2018 Filip Szukala. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class CodableStation: Decodable {
     let id: Int?
