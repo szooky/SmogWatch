@@ -19,3 +19,17 @@ class CodableSensor: Decodable {
         case parameters = "param"
     }
 }
+
+extension CodableSensor: CoreDatable {
+    func saveToCoreData() {
+        let newSensor: [String: Any] = [SensorCoreDataProperties.id: id ?? 0,
+                                        SensorCoreDataProperties.stationId: stationId ?? 0,
+                                        SensorCoreDataProperties.name: parameters?.name ?? "",
+                                        SensorCoreDataProperties.formula: parameters?.formula ?? "",
+                                        SensorCoreDataProperties.code: parameters?.code ?? "",
+                                        SensorCoreDataProperties.parameterId: parameters?.id ?? 0]
+        Database.shared.save(data: newSensor,
+                             as: SensorCoreDataProperties.entityName,
+                             primaryKey: SensorCoreDataProperties.id)
+    }
+}

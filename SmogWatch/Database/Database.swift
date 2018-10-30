@@ -27,16 +27,18 @@ class Database {
                 if let fetchResults = try managedContext.fetch(fetchRequest) as? [NSManagedObject] {
                     if fetchResults.count != 0 {
                         managedObject = fetchResults[0]
+                        print("💾 🔵 Updating entity \(entityName) with \(primaryKey) = \(primaryKeyValue)")
+
                     }
                 }
             } catch let error {
                 print(error.localizedDescription)
             }
 
-
             if managedObject == nil {
                 guard let entity = NSEntityDescription.entity(forEntityName: entityName, in: managedContext) else { return }
                 managedObject = NSManagedObject(entity: entity, insertInto: managedContext)
+                print("💾 ⚪️ Creating entity \(entityName) with \(primaryKey) = \(primaryKeyValue)")
             }
 
             for (key, value) in data {

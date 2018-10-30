@@ -225,9 +225,9 @@
 				389E0E27217D437200327A03 /* CodableCommune.swift */,
 				389E0E19217D15A900327A03 /* CodableAirQuality.swift */,
 				389E0E1B217D15B200327A03 /* CodableIndexLevel.swift */,
+				389E0E21217D421800327A03 /* CodableSensorData.swift */,
 				389E0E1D217D15BF00327A03 /* CodableParameterData.swift */,
 				389E0E1F217D420E00327A03 /* CodableSensor.swift */,
-				389E0E21217D421800327A03 /* CodableSensorData.swift */,
 				389E0E23217D422300327A03 /* CodableSensorParameters.swift */,
 			);
 			path = "Codable Models";
