@@ -9,8 +9,8 @@
         <attribute name="coIndexLevelId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="coIndexLevelName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="coSourceDataDate" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="no2CalcDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="no2CalcDate" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="no2IndexLevelId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="no2IndexLevelName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="no2SourceDataDate" optional="YES" attributeType="String" syncable="YES"/>

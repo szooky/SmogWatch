@@ -37,3 +37,46 @@ class CodableAirQuality: Decodable {
     let stIndexStatus: Bool?
     let stIndexCRParam: String?
 }
+
+extension CodableAirQuality: CoreDatable {
+    func saveToCoreData() {
+        let newAirQuality: [String: Any] = [AirQualityCoreDataProperties.id: UUID().uuid,
+                                            AirQualityCoreDataProperties.stationId: id ?? 0,
+                                            AirQualityCoreDataProperties.stCalcDate: stCalcDate ?? "",
+                                            AirQualityCoreDataProperties.stIndexLevelId: stIndexLevel?.id ?? 0,
+                                            AirQualityCoreDataProperties.stIndexLevelName: stIndexLevel?.indexLevelName ?? "",
+                                            AirQualityCoreDataProperties.stSourceDataDate: stSourceDataDate ?? "",
+                                            AirQualityCoreDataProperties.so2CalcDate: so2CalcDate ?? "",
+                                            AirQualityCoreDataProperties.so2IndexLevelId: so2IndexLevel?.id ?? 0,
+                                            AirQualityCoreDataProperties.so2IndexLevelName: so2IndexLevel?.indexLevelName ?? "",
+                                            AirQualityCoreDataProperties.so2SourceDataDate: so2SourceDataDate ?? "",
+                                            AirQualityCoreDataProperties.no2CalcDate: no2CalcDate ?? 0,
+                                            AirQualityCoreDataProperties.no2IndexLevelId: no2IndexLevel?.id ?? 0,
+                                            AirQualityCoreDataProperties.no2IndexLevelName: no2IndexLevel?.indexLevelName ?? "",
+                                            AirQualityCoreDataProperties.no2SourceDataDate: no2SourceDataDate ?? "",
+                                            AirQualityCoreDataProperties.coCalcDate: coCalcDate ?? "",
+                                            AirQualityCoreDataProperties.coIndexLevelId: coIndexLevel?.id ?? 0,
+                                            AirQualityCoreDataProperties.coIndexLevelName: coIndexLevel?.indexLevelName ?? "",
+                                            AirQualityCoreDataProperties.coSourceDataDate: coSourceDataDate ?? "",
+                                            AirQualityCoreDataProperties.pm10CalcDate: pm10CalcDate ?? "",
+                                            AirQualityCoreDataProperties.pm10IndexLevelId: pm10IndexLevel?.id ?? 0,
+                                            AirQualityCoreDataProperties.pm10SourceDataDate: pm10SourceDataDate ?? "",
+                                            AirQualityCoreDataProperties.pm25CalcDate: pm25CalcDate ?? "",
+                                            AirQualityCoreDataProperties.pm25IndexLevelId: pm25IndexLevel?.id ?? 0,
+                                            AirQualityCoreDataProperties.pm25IndexLevelName: pm25IndexLevel?.indexLevelName ?? "",
+                                            AirQualityCoreDataProperties.pm25SourceDataDate: pm25SourceDataDate ?? "",
+                                            AirQualityCoreDataProperties.o3CalcDate: o3CalcDate ?? "",
+                                            AirQualityCoreDataProperties.o3IndexLevelId: o3IndexLevel?.id ?? 0,
+                                            AirQualityCoreDataProperties.o3IndexLevelName: o3IndexLevel?.indexLevelName ?? "",
+                                            AirQualityCoreDataProperties.o3SourceDataDate: o3SourceDataDate ?? "",
+                                            AirQualityCoreDataProperties.c6h6CalcDate: c6H6CalcDate ?? "",
+                                            AirQualityCoreDataProperties.c6h6IndexLevelId: c6H6IndexLevel?.id ?? 0,
+                                            AirQualityCoreDataProperties.c6h6IndexLevelName: c6H6IndexLevel?.indexLevelName ?? "",
+                                            AirQualityCoreDataProperties.c6h6SourceDataDate: c6H6SourceDataDate ?? "",
+                                            AirQualityCoreDataProperties.pm10IndexLevelName: pm10IndexLevel?.indexLevelName ?? ""]
+
+        Database.shared.save(data: newAirQuality,
+                             as: AirQualityCoreDataProperties.entityName,
+                             primaryKey: AirQualityCoreDataProperties.id)
+    }
+}
