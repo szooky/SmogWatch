@@ -17,3 +17,10 @@ class CodableSensorData: Decodable {
         case parametersData = "values"
     }
 }
+
+extension CodableSensorData: CoreDatable {
+    func saveToCoreData() {
+//        let newSmogData: [String: Any] = [SmogDataCoreDataProperties.id: UUID().uuid,
+//                                          SmogDataCoreDataProperties.stationId:]
+    }
+}
