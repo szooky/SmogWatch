@@ -20,7 +20,7 @@ extension SmogData {
     @NSManaged public var stationId: Int32
     @NSManaged public var parameterName: String?
     @NSManaged public var date: String?
-    @NSManaged public var value: String?
+    @NSManaged public var value: Double
 }
 
 class SmogDataCoreDataProperties {

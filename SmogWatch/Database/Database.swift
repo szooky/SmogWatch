@@ -29,6 +29,8 @@ class Database {
 
             if let primaryKeyValue = primaryKeyValue as? Int {
                 fetchRequest.predicate = NSPredicate(format: "\(primaryKey) = %d", primaryKeyValue)
+            } else if let primaryKeyValue = primaryKeyValue as? String {
+                fetchRequest.predicate = NSPredicate(format: "\(primaryKey) = %@", primaryKeyValue)
             } else if let primaryKeyValue = primaryKeyValue as? UUID {
                 fetchRequest.predicate = NSPredicate(format: "%K == %@", primaryKey, primaryKeyValue.uuidString as CVarArg)
             } else {

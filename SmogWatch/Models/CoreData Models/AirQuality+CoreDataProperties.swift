@@ -16,7 +16,7 @@ extension AirQuality {
         return NSFetchRequest<AirQuality>(entityName: AirQualityCoreDataProperties.entityName)
     }
 
-    @NSManaged public var id: UUID?
+    @NSManaged public var id: String?
     @NSManaged public var stationId: Int32
     @NSManaged public var stIndexLevelId: Int32
     @NSManaged public var stIndexLevelName: String?

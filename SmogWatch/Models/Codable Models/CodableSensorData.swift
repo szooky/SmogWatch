@@ -11,6 +11,7 @@ import Foundation
 class CodableSensorData: Decodable {
     let key: String?
     let parametersData: [CodableParameterData?]?
+    var stationId: Int?
 
     enum CodingKeys: String, CodingKey {
         case key = "key"
@@ -20,7 +21,19 @@ class CodableSensorData: Decodable {
 
 extension CodableSensorData: CoreDatable {
     func saveToCoreData() {
-//        let newSmogData: [String: Any] = [SmogDataCoreDataProperties.id: UUID().uuid,
-//                                          SmogDataCoreDataProperties.stationId:]
+        guard let parameters = parametersData else { return }
+        guard let stationId = stationId else { return }
+
+        for parameter in parameters {
+            let newParameter: [String: Any] = [SmogDataCoreDataProperties.id: "\(stationId)_\(key ?? "")_\(parameter?.date ?? "")",
+                                             SmogDataCoreDataProperties.parameterName: key ?? "",
+                                             SmogDataCoreDataProperties.stationId: stationId,
+                                             SmogDataCoreDataProperties.date: parameter?.date ?? "",
+                                             SmogDataCoreDataProperties.value: parameter?.value ?? 0.0]
+
+            Database.shared.save(data: newParameter,
+                                 as: SmogDataCoreDataProperties.entityName,
+                                 primaryKey: SmogDataCoreDataProperties.id)
+        }
     }
 }

@@ -24,6 +24,10 @@ class SmogAPI: API {
                     if let decodedResponse = response as? [CoreDatable] {
                         decodedResponse.forEach { $0.saveToCoreData() }
                     } else if let decodedResponse = response as? CoreDatable {
+                        if let smogRequest = request as? GetStationData, let smogResponse = response as? CodableSensorData{
+                            smogResponse.stationId = smogRequest.stationId
+                        }
+
                         decodedResponse.saveToCoreData()
                     }
 

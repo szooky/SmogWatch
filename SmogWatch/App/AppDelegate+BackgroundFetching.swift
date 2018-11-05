@@ -21,8 +21,6 @@ extension AppDelegate {
                 print(error)
             }
         }
-
-
     }
 }
 

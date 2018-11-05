@@ -40,7 +40,7 @@ class CodableAirQuality: Decodable {
 
 extension CodableAirQuality: CoreDatable {
     func saveToCoreData() {
-        let newAirQuality: [String: Any] = [AirQualityCoreDataProperties.id: UUID().uuid,
+        let newAirQuality: [String: Any] = [AirQualityCoreDataProperties.id: "\(id ?? 0)_\(stSourceDataDate ?? "")",
                                             AirQualityCoreDataProperties.stationId: id ?? 0,
                                             AirQualityCoreDataProperties.stCalcDate: stCalcDate ?? "",
                                             AirQualityCoreDataProperties.stIndexLevelId: stIndexLevel?.id ?? 0,
