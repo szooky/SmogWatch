@@ -13,15 +13,27 @@ class Database {
     static var shared = Database()
 
     func save(data: [String: Any], as entityName: String, primaryKey: String) {
+
+        if entityName == AirQualityCoreDataProperties.entityName {
+            print("saving air quality")
+        }
+
         DispatchQueue.main.async {
             guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
-            guard let primaryKeyValue = data[primaryKey] as? Int else { return }
+            guard let primaryKeyValue = data[primaryKey] else { return }
             let managedContext = appDelegate.persistentContainer.viewContext
             var managedObject: NSManagedObject? = nil
 
             let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: entityName)
             fetchRequest.fetchLimit = 1
-            fetchRequest.predicate = NSPredicate(format: "\(primaryKey) = %d", primaryKeyValue)
+
+            if let primaryKeyValue = primaryKeyValue as? Int {
+                fetchRequest.predicate = NSPredicate(format: "\(primaryKey) = %d", primaryKeyValue)
+            } else if let primaryKeyValue = primaryKeyValue as? UUID {
+                fetchRequest.predicate = NSPredicate(format: "%K == %@", primaryKey, primaryKeyValue.uuidString as CVarArg)
+            } else {
+                return
+            }
 
             do {
                 if let fetchResults = try managedContext.fetch(fetchRequest) as? [NSManagedObject] {
