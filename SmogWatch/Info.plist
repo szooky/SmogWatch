@@ -2,14 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>Aplikacja potrzebuje zgody na lokalizację by pobierać informację o smogu z najbliższych stacji pomiarowych.</string>
-	<key>NSLocationUsageDescription</key>
-	<string>Aplikacja potrzebuje zgody na lokalizację by pobierać informację o smogu z najbliższych stacji pomiarowych.</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Aplikacja potrzebuje zgody na lokalizację by pobierać informację o smogu z najbliższych stacji pomiarowych.</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Aplikacja potrzebuje zgody na lokalizację by pobierać informację o smogu z najbliższych stacji pomiarowych.</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -43,6 +35,14 @@
 			</dict>
 		</dict>
 	</dict>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Aplikacja potrzebuje zgody na lokalizację by pobierać informację o smogu z najbliższych stacji pomiarowych.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Aplikacja potrzebuje zgody na lokalizację by pobierać informację o smogu z najbliższych stacji pomiarowych.</string>
+	<key>NSLocationUsageDescription</key>
+	<string>Aplikacja potrzebuje zgody na lokalizację by pobierać informację o smogu z najbliższych stacji pomiarowych.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Aplikacja potrzebuje zgody na lokalizację by pobierać informację o smogu z najbliższych stacji pomiarowych.</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>fetch</string>
@@ -50,8 +50,6 @@
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
-	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

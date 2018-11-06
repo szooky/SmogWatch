@@ -17,6 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UIApplication.shared.setMinimumBackgroundFetchInterval(3600)
         print(persistentContainer.persistentStoreCoordinator.persistentStores.first?.url ?? "no store")
 
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        window?.rootViewController = SmogMapViewController()
+
         return true
     }
 

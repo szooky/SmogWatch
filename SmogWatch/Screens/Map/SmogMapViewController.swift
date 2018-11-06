@@ -8,12 +8,20 @@
 
 import UIKit
 
-class MapViewController: UIViewController {
+class SmogMapViewController: UIViewController {
+    let mainView = SmogMapView()
+    let viewModel = SmogMapViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         DataFlowManager.shared.fetchSmogDataFromNearestStation(withLocationAuthorizationRequestOnViewController: self)
+        setupView()
+    }
+
+    private func setupView() {
+        view = mainView
+        mainView.setupView()
     }
 }
 
