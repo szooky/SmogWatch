@@ -44,7 +44,13 @@ class LocationManager {
         viewController.present(alertController, animated: true, completion: nil)
     }
 
-    func getNearestStationIndex() -> Int? {
+    func getNearestStationIndex(withLocationAuthorizationRequestOnViewController viewController: UIViewController? = nil) -> Int? {
+        locationManager.startUpdatingLocation()
+
+        if let viewController = viewController {
+            requestLocationAuthorization(on: viewController)
+        }
+
         DataFlowManager.shared.fetchStations()
         guard let stations = Database.shared.getAllStations() else { return nil }
         guard let currentLocation = locationManager.location else { return nil }
