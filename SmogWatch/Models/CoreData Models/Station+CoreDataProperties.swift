@@ -9,6 +9,7 @@
 
 import Foundation
 import CoreData
+import CoreLocation
 
 
 extension Station {
@@ -26,6 +27,16 @@ extension Station {
     @NSManaged public var commune: String?
     @NSManaged public var district: String?
     @NSManaged public var province: String?
+
+    var coordinates: CLLocationCoordinate2D? {
+        guard let latitude = latitude else { return nil }
+        guard let longitude = longitude else { return nil }
+        guard let latitudeDouble = Double(latitude) else { return nil }
+        guard let longitudeDouble = Double(longitude) else { return nil }
+        guard let latitudeDegrees = CLLocationDegrees(exactly: latitudeDouble) else { return nil }
+        guard let longitudeDegrees = CLLocationDegrees(exactly: longitudeDouble) else { return nil }
+        return CLLocationCoordinate2D(latitude: latitudeDegrees, longitude: longitudeDegrees)
+    }
 }
 
 class StationCoreDataProperties {
