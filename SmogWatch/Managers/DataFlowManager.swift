@@ -12,10 +12,9 @@ class DataFlowManager {
     static var shared = DataFlowManager()
 
     func fetchSmogDataFromNearestStation() {
-        let nearestStationId = LocationManager.shared.getNearestStationIndex()
+        guard let nearestStationId = LocationManager.shared.getNearestStationIndex() else { return }
 
         SmogAPI().send(GetStationData(stationId: nearestStationId)) { response in
-
             switch response {
             case .success(let sensors):
                 dump(sensors)

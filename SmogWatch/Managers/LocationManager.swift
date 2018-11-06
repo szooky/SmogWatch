@@ -13,10 +13,6 @@ class LocationManager {
     static var shared = LocationManager()
     private let locationManager = CLLocationManager()
 
-    init() {
-        locationManager.delegate = self
-    }
-
     private func requestLocationAuthorization(on viewController: UIViewController) {
         switch CLLocationManager.authorizationStatus() {
         case .notDetermined:
@@ -51,28 +47,25 @@ class LocationManager {
     func getNearestStationIndex() -> Int? {
         DataFlowManager.shared.fetchStations()
         guard let stations = Database.shared.getAllStations() else { return nil }
-        let currentLocation = locationManager
+        guard let currentLocation = locationManager.location else { return nil }
+        var minimumDistance = CLLocationDistanceMax
+        var closestStation = stations.first
 
+        for station in stations {
+            if let stationLocation = station.coordinates {
+                let distance = currentLocation.distance(from: stationLocation)
+                if distance < minimumDistance {
+                    closestStation = station
+                    minimumDistance = distance
+                }
+            }
+        }
 
-
-        let currentLocation = mapView.userLocation.location!
-
-        let nearestPin: MKAnnotation? = pins.reduce((CLLocationDistanceMax, nil)) { (nearest, pin) in
-            let coord = pin.coordinate
-            let loc = CLLocation(latitude: coord.latitude, longitude: coord.longitude)
-            let distance = currentLocation.distanceFromLocation(loc)
-            return distance < nearest.0 ? (distance, pin) : nearest
-            }.1
-
-
-
-
-        return 92
+        if let id = closestStation?.id {
+            return Int(id)
+        } else {
+            return nil
+        }
     }
 }
 
-extension LocationManager: CLLocationManagerDelegate {
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        print("user changed location")
-    }
-}

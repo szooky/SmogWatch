@@ -28,14 +28,14 @@ extension Station {
     @NSManaged public var district: String?
     @NSManaged public var province: String?
 
-    var coordinates: CLLocationCoordinate2D? {
+    var coordinates: CLLocation? {
         guard let latitude = latitude else { return nil }
         guard let longitude = longitude else { return nil }
         guard let latitudeDouble = Double(latitude) else { return nil }
         guard let longitudeDouble = Double(longitude) else { return nil }
         guard let latitudeDegrees = CLLocationDegrees(exactly: latitudeDouble) else { return nil }
         guard let longitudeDegrees = CLLocationDegrees(exactly: longitudeDouble) else { return nil }
-        return CLLocationCoordinate2D(latitude: latitudeDegrees, longitude: longitudeDegrees)
+        return CLLocation(latitude: latitudeDegrees, longitude: longitudeDegrees)
     }
 }
 
