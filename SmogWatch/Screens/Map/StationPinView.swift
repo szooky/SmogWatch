@@ -7,18 +7,26 @@
 //
 
 import MapKit
+import UIKit
 
 class StationPinView: MKAnnotationView {
     static let identifier = "StationPinView"
 
+    let emojiLabel: UILabel = {
+        let label = UILabel()
+        label.text = "😷"
+        label.textAlignment = .center
+        label.font = UIFont.systemFont(ofSize: 50.0)
+        return label
+    }()
 
     override init(annotation: MKAnnotation?, reuseIdentifier: String?) {
         super.init(annotation: annotation, reuseIdentifier: reuseIdentifier)
 
         clusteringIdentifier = StationPinClusterView.identifier
-        backgroundColor = .red
-        bounds = CGRect(x: 0, y: 0, width: 70, height: 70)
+        bounds = CGRect(x: 0, y: 0, width: 50, height: 50)
         self.displayPriority = .defaultLow
+        setupEmojiLabel()
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -29,5 +37,12 @@ class StationPinView: MKAnnotationView {
         super.prepareForReuse()
 
         clusteringIdentifier = StationPinClusterView.identifier
+    }
+
+    private func setupEmojiLabel() {
+        addSubview(emojiLabel)
+        emojiLabel.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
     }
 }
