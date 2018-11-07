@@ -24,7 +24,7 @@ class LocationManager {
         }
     }
 
-    private func showLocationPreviouslyDeniedAlert(on viewController: UIViewController) {
+    func showLocationPreviouslyDeniedAlert(on viewController: UIViewController) {
         let title = "Brak zgody na lokalizację użytkownika"
         let message = "Nie zezwoliłeś wcześniej na dostęp do lokalizacji, by to zmienić przejdź do ustawień i zezwól aplikacji na korzystanie z lokalizacji użytkownika"
         let alertController = UIAlertController (title: title, message: message, preferredStyle: .alert)

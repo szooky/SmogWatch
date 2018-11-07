@@ -25,4 +25,9 @@ class SmogMapView: UIView {
             make.edges.equalToSuperview()
         }
     }
+
+    func load(stations: [StationAnntotation]) {
+        mapView.addAnnotations(stations)
+        mapView.showAnnotations(stations, animated: true)
+    }
 }

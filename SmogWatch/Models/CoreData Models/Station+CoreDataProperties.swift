@@ -28,6 +28,7 @@ extension Station {
     @NSManaged public var district: String?
     @NSManaged public var province: String?
 
+    var mapAnnotation: StationAnntotation { return StationAnntotation(station: self) }
     var coordinates: CLLocation? {
         guard let latitude = latitude else { return nil }
         guard let longitude = longitude else { return nil }

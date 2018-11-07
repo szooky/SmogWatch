@@ -38,6 +38,9 @@
 		38A7BF702186901D00F0774A /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A7BF6F2186901D00F0774A /* Optional.swift */; };
 		38C8EAE9219213750033DF4D /* SmogMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C8EAE8219213750033DF4D /* SmogMapView.swift */; };
 		38C8EAEB219213880033DF4D /* SmogMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C8EAEA219213880033DF4D /* SmogMapViewModel.swift */; };
+		38C8EAED21923F920033DF4D /* StationPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C8EAEC21923F910033DF4D /* StationPinView.swift */; };
+		38C8EAEF2192442D0033DF4D /* StationPinClusterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C8EAEE2192442D0033DF4D /* StationPinClusterView.swift */; };
+		38C8EAF2219248370033DF4D /* StationAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C8EAF1219248370033DF4D /* StationAnnotation.swift */; };
 		38CB67802190C3B000D2DA1C /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CB677F2190C3B000D2DA1C /* LocationManager.swift */; };
 		38CB67822190C83700D2DA1C /* DataFlowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CB67812190C83700D2DA1C /* DataFlowManager.swift */; };
 		38D50A0F21077A95008AB8D2 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D50A0E21077A95008AB8D2 /* Request.swift */; };
@@ -119,6 +122,9 @@
 		38A7BF6F2186901D00F0774A /* Optional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
 		38C8EAE8219213750033DF4D /* SmogMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmogMapView.swift; sourceTree = "<group>"; };
 		38C8EAEA219213880033DF4D /* SmogMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmogMapViewModel.swift; sourceTree = "<group>"; };
+		38C8EAEC21923F910033DF4D /* StationPinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationPinView.swift; sourceTree = "<group>"; };
+		38C8EAEE2192442D0033DF4D /* StationPinClusterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationPinClusterView.swift; sourceTree = "<group>"; };
+		38C8EAF1219248370033DF4D /* StationAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationAnnotation.swift; sourceTree = "<group>"; };
 		38CB677F2190C3B000D2DA1C /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		38CB67812190C83700D2DA1C /* DataFlowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFlowManager.swift; sourceTree = "<group>"; };
 		38D50A0E21077A95008AB8D2 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
@@ -256,6 +262,7 @@
 				38A7BF692186381600F0774A /* Protocols */,
 				389E0E16217D14FA00327A03 /* Codable Models */,
 				38DE68D4216BB53000A181DA /* CoreData Models */,
+				38C8EAF0219248150033DF4D /* MapKit Models */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -297,9 +304,19 @@
 			children = (
 				38F21BCE218234A600A7A922 /* SmogMapViewController.swift */,
 				38C8EAE8219213750033DF4D /* SmogMapView.swift */,
+				38C8EAEC21923F910033DF4D /* StationPinView.swift */,
+				38C8EAEE2192442D0033DF4D /* StationPinClusterView.swift */,
 				38C8EAEA219213880033DF4D /* SmogMapViewModel.swift */,
 			);
 			path = Map;
+			sourceTree = "<group>";
+		};
+		38C8EAF0219248150033DF4D /* MapKit Models */ = {
+			isa = PBXGroup;
+			children = (
+				38C8EAF1219248370033DF4D /* StationAnnotation.swift */,
+			);
+			path = "MapKit Models";
 			sourceTree = "<group>";
 		};
 		38CB677E2190C39D00D2DA1C /* Managers */ = {
@@ -655,6 +672,7 @@
 				38A7BF6B2186382300F0774A /* CoreDatable.swift in Sources */,
 				38F910E22108DE74002DB8F8 /* GetStations.swift in Sources */,
 				38C8EAEB219213880033DF4D /* SmogMapViewModel.swift in Sources */,
+				38C8EAEF2192442D0033DF4D /* StationPinClusterView.swift in Sources */,
 				38E7F884210F4413007260FD /* GetStationSensors.swift in Sources */,
 				3800135A20FE4B4900725237 /* AppDelegate.swift in Sources */,
 				38D50A0F21077A95008AB8D2 /* Request.swift in Sources */,
@@ -670,6 +688,7 @@
 				38443B1821861C97000389E4 /* AirQuality+CoreDataProperties.swift in Sources */,
 				389E0E28217D437200327A03 /* CodableCommune.swift in Sources */,
 				38443B1621861C97000389E4 /* SmogData+CoreDataProperties.swift in Sources */,
+				38C8EAED21923F920033DF4D /* StationPinView.swift in Sources */,
 				38D50A1621078F44008AB8D2 /* Response.swift in Sources */,
 				38443B1521861C97000389E4 /* SmogData+CoreDataClass.swift in Sources */,
 				38CB67802190C3B000D2DA1C /* LocationManager.swift in Sources */,
@@ -680,6 +699,7 @@
 				38443B1C21861C97000389E4 /* Sensor+CoreDataProperties.swift in Sources */,
 				389E0E20217D420E00327A03 /* CodableSensor.swift in Sources */,
 				38A7BF6D2186880200F0774A /* Database.swift in Sources */,
+				38C8EAF2219248370033DF4D /* StationAnnotation.swift in Sources */,
 				389E0E26217D435F00327A03 /* CodableCity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
