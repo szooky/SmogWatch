@@ -24,6 +24,7 @@
 		38443B1A21861C97000389E4 /* Station+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38443B1221861C97000389E4 /* Station+CoreDataProperties.swift */; };
 		38443B1B21861C97000389E4 /* Sensor+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38443B1321861C97000389E4 /* Sensor+CoreDataClass.swift */; };
 		38443B1C21861C97000389E4 /* Sensor+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38443B1421861C97000389E4 /* Sensor+CoreDataProperties.swift */; };
+		385698DA21BC36F700BF1B16 /* Texts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385698D921BC36F700BF1B16 /* Texts.swift */; };
 		389E0E18217D159C00327A03 /* CodableStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389E0E17217D159C00327A03 /* CodableStation.swift */; };
 		389E0E1A217D15A900327A03 /* CodableAirQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389E0E19217D15A900327A03 /* CodableAirQuality.swift */; };
 		389E0E1C217D15B200327A03 /* CodableIndexLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389E0E1B217D15B200327A03 /* CodableIndexLevel.swift */; };
@@ -55,6 +56,24 @@
 		38F21BCF218234A600A7A922 /* SmogMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F21BCE218234A600A7A922 /* SmogMapViewController.swift */; };
 		38F21BD12182381F00A7A922 /* StationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F21BD02182381F00A7A922 /* StationViewController.swift */; };
 		38F21BD32182386200A7A922 /* StationsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F21BD22182386200A7A922 /* StationsPageViewController.swift */; };
+		38F2BB4321936AA300035BB4 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38F2BB4121936AA300035BB4 /* Interface.storyboard */; };
+		38F2BB4521936AA600035BB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38F2BB4421936AA600035BB4 /* Assets.xcassets */; };
+		38F2BB4C21936AA600035BB4 /* SmogWatchForWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 38F2BB4B21936AA600035BB4 /* SmogWatchForWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		38F2BB5121936AA600035BB4 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F2BB5021936AA600035BB4 /* InterfaceController.swift */; };
+		38F2BB5321936AA600035BB4 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F2BB5221936AA600035BB4 /* ExtensionDelegate.swift */; };
+		38F2BB5521936AA600035BB4 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F2BB5421936AA600035BB4 /* NotificationController.swift */; };
+		38F2BB5721936AA600035BB4 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F2BB5621936AA600035BB4 /* ComplicationController.swift */; };
+		38F2BB5921936AA700035BB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38F2BB5821936AA700035BB4 /* Assets.xcassets */; };
+		38F2BB5E21936AA700035BB4 /* SmogWatchForWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 38F2BB3F21936AA300035BB4 /* SmogWatchForWatch.app */; };
+		38F2BB6721936CB900035BB4 /* SmogData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38443B0D21861C97000389E4 /* SmogData+CoreDataClass.swift */; };
+		38F2BB6821936CBB00035BB4 /* SmogData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38443B0E21861C97000389E4 /* SmogData+CoreDataProperties.swift */; };
+		38F2BB6921936CBE00035BB4 /* AirQuality+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38443B0F21861C97000389E4 /* AirQuality+CoreDataClass.swift */; };
+		38F2BB6A21936CC000035BB4 /* AirQuality+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38443B1021861C97000389E4 /* AirQuality+CoreDataProperties.swift */; };
+		38F2BB6B21936CC300035BB4 /* Station+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38443B1121861C97000389E4 /* Station+CoreDataClass.swift */; };
+		38F2BB6C21936CC600035BB4 /* Station+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38443B1221861C97000389E4 /* Station+CoreDataProperties.swift */; };
+		38F2BB6D21936CC800035BB4 /* Sensor+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38443B1321861C97000389E4 /* Sensor+CoreDataClass.swift */; };
+		38F2BB6E21936CCB00035BB4 /* Sensor+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38443B1421861C97000389E4 /* Sensor+CoreDataProperties.swift */; };
+		38F2BB6F21936D9300035BB4 /* StationAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C8EAF1219248370033DF4D /* StationAnnotation.swift */; };
 		38F910E22108DE74002DB8F8 /* GetStations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F910E12108DE74002DB8F8 /* GetStations.swift */; };
 		38F910E5210A4667002DB8F8 /* SmogAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F910E4210A4667002DB8F8 /* SmogAPI.swift */; };
 		462CB786BA5A4B083FA13551 /* Pods_SmogWatchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F790438B7CBD9971924CCE /* Pods_SmogWatchTests.framework */; };
@@ -77,7 +96,46 @@
 			remoteGlobalIDString = 3800135520FE4B4900725237;
 			remoteInfo = SmogWatch;
 		};
+		38F2BB4D21936AA600035BB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3800134E20FE4B4900725237 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38F2BB4A21936AA600035BB4;
+			remoteInfo = "SmogWatchForWatch Extension";
+		};
+		38F2BB5C21936AA700035BB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3800134E20FE4B4900725237 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38F2BB3E21936AA300035BB4;
+			remoteInfo = SmogWatchForWatch;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		38F2BB6421936AA700035BB4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				38F2BB4C21936AA600035BB4 /* SmogWatchForWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38F2BB6621936AA700035BB4 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				38F2BB5E21936AA700035BB4 /* SmogWatchForWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		08D3E2906407B786CCF58362 /* Pods_SmogWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmogWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +166,7 @@
 		38443B1221861C97000389E4 /* Station+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Station+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		38443B1321861C97000389E4 /* Sensor+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sensor+CoreDataClass.swift"; sourceTree = "<group>"; };
 		38443B1421861C97000389E4 /* Sensor+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sensor+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		385698D921BC36F700BF1B16 /* Texts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Texts.swift; sourceTree = "<group>"; };
 		389E0E17217D159C00327A03 /* CodableStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableStation.swift; sourceTree = "<group>"; };
 		389E0E19217D15A900327A03 /* CodableAirQuality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableAirQuality.swift; sourceTree = "<group>"; };
 		389E0E1B217D15B200327A03 /* CodableIndexLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableIndexLevel.swift; sourceTree = "<group>"; };
@@ -139,6 +198,18 @@
 		38F21BCE218234A600A7A922 /* SmogMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmogMapViewController.swift; sourceTree = "<group>"; };
 		38F21BD02182381F00A7A922 /* StationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationViewController.swift; sourceTree = "<group>"; };
 		38F21BD22182386200A7A922 /* StationsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsPageViewController.swift; sourceTree = "<group>"; };
+		38F2BB3F21936AA300035BB4 /* SmogWatchForWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmogWatchForWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		38F2BB4221936AA300035BB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		38F2BB4421936AA600035BB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		38F2BB4621936AA600035BB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38F2BB4B21936AA600035BB4 /* SmogWatchForWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SmogWatchForWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		38F2BB5021936AA600035BB4 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		38F2BB5221936AA600035BB4 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		38F2BB5421936AA600035BB4 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		38F2BB5621936AA600035BB4 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		38F2BB5821936AA700035BB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		38F2BB5A21936AA700035BB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38F2BB5B21936AA700035BB4 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		38F910E12108DE74002DB8F8 /* GetStations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStations.swift; sourceTree = "<group>"; };
 		38F910E4210A4667002DB8F8 /* SmogAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmogAPI.swift; sourceTree = "<group>"; };
 		B089B9DBBBE72B76BB9C8AD5 /* Pods-SmogWatchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmogWatchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmogWatchTests/Pods-SmogWatchTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -172,6 +243,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		38F2BB4821936AA600035BB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -194,6 +272,8 @@
 				3800135820FE4B4900725237 /* SmogWatch */,
 				3800137020FE4B4B00725237 /* SmogWatchTests */,
 				3800137B20FE4B4B00725237 /* SmogWatchUITests */,
+				38F2BB4021936AA300035BB4 /* SmogWatchForWatch */,
+				38F2BB4F21936AA600035BB4 /* SmogWatchForWatch Extension */,
 				3800135720FE4B4900725237 /* Products */,
 				2AC6D18A5DCB71D7B8349977 /* Pods */,
 				B977D37461953A45C000F953 /* Frameworks */,
@@ -206,6 +286,8 @@
 				3800135620FE4B4900725237 /* SmogWatch.app */,
 				3800136D20FE4B4B00725237 /* SmogWatchTests.xctest */,
 				3800137820FE4B4B00725237 /* SmogWatchUITests.xctest */,
+				38F2BB3F21936AA300035BB4 /* SmogWatchForWatch.app */,
+				38F2BB4B21936AA600035BB4 /* SmogWatchForWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -369,6 +451,30 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		38F2BB4021936AA300035BB4 /* SmogWatchForWatch */ = {
+			isa = PBXGroup;
+			children = (
+				38F2BB4121936AA300035BB4 /* Interface.storyboard */,
+				38F2BB4421936AA600035BB4 /* Assets.xcassets */,
+				38F2BB4621936AA600035BB4 /* Info.plist */,
+			);
+			path = SmogWatchForWatch;
+			sourceTree = "<group>";
+		};
+		38F2BB4F21936AA600035BB4 /* SmogWatchForWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				38F2BB5021936AA600035BB4 /* InterfaceController.swift */,
+				38F2BB5221936AA600035BB4 /* ExtensionDelegate.swift */,
+				38F2BB5421936AA600035BB4 /* NotificationController.swift */,
+				38F2BB5621936AA600035BB4 /* ComplicationController.swift */,
+				38F2BB5821936AA700035BB4 /* Assets.xcassets */,
+				38F2BB5A21936AA700035BB4 /* Info.plist */,
+				38F2BB5B21936AA700035BB4 /* PushNotificationPayload.apns */,
+			);
+			path = "SmogWatchForWatch Extension";
+			sourceTree = "<group>";
+		};
 		38F910DC2108D7B8002DB8F8 /* Requests */ = {
 			isa = PBXGroup;
 			children = (
@@ -403,6 +509,7 @@
 			isa = PBXGroup;
 			children = (
 				3800136320FE4B4B00725237 /* Assets.xcassets */,
+				385698D921BC36F700BF1B16 /* Texts.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -450,10 +557,12 @@
 				3800135320FE4B4900725237 /* Frameworks */,
 				3800135420FE4B4900725237 /* Resources */,
 				6736E7F25110F8D57865A259 /* [CP] Embed Pods Frameworks */,
+				38F2BB6621936AA700035BB4 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				38F2BB5D21936AA700035BB4 /* PBXTargetDependency */,
 			);
 			name = SmogWatch;
 			productName = SmogWatch;
@@ -498,13 +607,47 @@
 			productReference = 3800137820FE4B4B00725237 /* SmogWatchUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		38F2BB3E21936AA300035BB4 /* SmogWatchForWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38F2BB6521936AA700035BB4 /* Build configuration list for PBXNativeTarget "SmogWatchForWatch" */;
+			buildPhases = (
+				38F2BB3D21936AA300035BB4 /* Resources */,
+				38F2BB6421936AA700035BB4 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				38F2BB4E21936AA600035BB4 /* PBXTargetDependency */,
+			);
+			name = SmogWatchForWatch;
+			productName = SmogWatchForWatch;
+			productReference = 38F2BB3F21936AA300035BB4 /* SmogWatchForWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		38F2BB4A21936AA600035BB4 /* SmogWatchForWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38F2BB6321936AA700035BB4 /* Build configuration list for PBXNativeTarget "SmogWatchForWatch Extension" */;
+			buildPhases = (
+				38F2BB4721936AA600035BB4 /* Sources */,
+				38F2BB4821936AA600035BB4 /* Frameworks */,
+				38F2BB4921936AA600035BB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SmogWatchForWatch Extension";
+			productName = "SmogWatchForWatch Extension";
+			productReference = 38F2BB4B21936AA600035BB4 /* SmogWatchForWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		3800134E20FE4B4900725237 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0940;
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Filip Szukala";
 				TargetAttributes = {
@@ -527,6 +670,12 @@
 						LastSwiftMigration = 1000;
 						TestTargetID = 3800135520FE4B4900725237;
 					};
+					38F2BB3E21936AA300035BB4 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					38F2BB4A21936AA600035BB4 = {
+						CreatedOnToolsVersion = 10.1;
+					};
 				};
 			};
 			buildConfigurationList = 3800135120FE4B4900725237 /* Build configuration list for PBXProject "SmogWatch" */;
@@ -545,6 +694,8 @@
 				3800135520FE4B4900725237 /* SmogWatch */,
 				3800136C20FE4B4B00725237 /* SmogWatchTests */,
 				3800137720FE4B4B00725237 /* SmogWatchUITests */,
+				38F2BB3E21936AA300035BB4 /* SmogWatchForWatch */,
+				38F2BB4A21936AA600035BB4 /* SmogWatchForWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -571,6 +722,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38F2BB3D21936AA300035BB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38F2BB4521936AA600035BB4 /* Assets.xcassets in Resources */,
+				38F2BB4321936AA300035BB4 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38F2BB4921936AA600035BB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38F2BB5921936AA700035BB4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -698,6 +866,7 @@
 				38F21BD12182381F00A7A922 /* StationViewController.swift in Sources */,
 				38443B1C21861C97000389E4 /* Sensor+CoreDataProperties.swift in Sources */,
 				389E0E20217D420E00327A03 /* CodableSensor.swift in Sources */,
+				385698DA21BC36F700BF1B16 /* Texts.swift in Sources */,
 				38A7BF6D2186880200F0774A /* Database.swift in Sources */,
 				38C8EAF2219248370033DF4D /* StationAnnotation.swift in Sources */,
 				389E0E26217D435F00327A03 /* CodableCity.swift in Sources */,
@@ -720,6 +889,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		38F2BB4721936AA600035BB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38F2BB5521936AA600035BB4 /* NotificationController.swift in Sources */,
+				38F2BB5721936AA600035BB4 /* ComplicationController.swift in Sources */,
+				38F2BB5321936AA600035BB4 /* ExtensionDelegate.swift in Sources */,
+				38F2BB6E21936CCB00035BB4 /* Sensor+CoreDataProperties.swift in Sources */,
+				38F2BB6721936CB900035BB4 /* SmogData+CoreDataClass.swift in Sources */,
+				38F2BB5121936AA600035BB4 /* InterfaceController.swift in Sources */,
+				38F2BB6821936CBB00035BB4 /* SmogData+CoreDataProperties.swift in Sources */,
+				38F2BB6C21936CC600035BB4 /* Station+CoreDataProperties.swift in Sources */,
+				38F2BB6F21936D9300035BB4 /* StationAnnotation.swift in Sources */,
+				38F2BB6A21936CC000035BB4 /* AirQuality+CoreDataProperties.swift in Sources */,
+				38F2BB6921936CBE00035BB4 /* AirQuality+CoreDataClass.swift in Sources */,
+				38F2BB6D21936CC800035BB4 /* Sensor+CoreDataClass.swift in Sources */,
+				38F2BB6B21936CC300035BB4 /* Station+CoreDataClass.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -732,6 +921,16 @@
 			isa = PBXTargetDependency;
 			target = 3800135520FE4B4900725237 /* SmogWatch */;
 			targetProxy = 3800137920FE4B4B00725237 /* PBXContainerItemProxy */;
+		};
+		38F2BB4E21936AA600035BB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 38F2BB4A21936AA600035BB4 /* SmogWatchForWatch Extension */;
+			targetProxy = 38F2BB4D21936AA600035BB4 /* PBXContainerItemProxy */;
+		};
+		38F2BB5D21936AA700035BB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 38F2BB3E21936AA300035BB4 /* SmogWatchForWatch */;
+			targetProxy = 38F2BB5C21936AA700035BB4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -750,6 +949,14 @@
 				3800136620FE4B4B00725237 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		38F2BB4121936AA300035BB4 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38F2BB4221936AA300035BB4 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -993,6 +1200,94 @@
 			};
 			name = Release;
 		};
+		38F2BB5F21936AA700035BB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GN5RD5DNZH;
+				IBSC_MODULE = SmogWatchForWatch_Extension;
+				INFOPLIST_FILE = SmogWatchForWatch/Info.plist;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = szukala.SmogWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		38F2BB6021936AA700035BB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GN5RD5DNZH;
+				IBSC_MODULE = SmogWatchForWatch_Extension;
+				INFOPLIST_FILE = SmogWatchForWatch/Info.plist;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = szukala.SmogWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		38F2BB6121936AA700035BB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GN5RD5DNZH;
+				INFOPLIST_FILE = "SmogWatchForWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = szukala.SmogWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		38F2BB6221936AA700035BB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GN5RD5DNZH;
+				INFOPLIST_FILE = "SmogWatchForWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = szukala.SmogWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1028,6 +1323,24 @@
 			buildConfigurations = (
 				3800138820FE4B4B00725237 /* Debug */,
 				3800138920FE4B4B00725237 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38F2BB6321936AA700035BB4 /* Build configuration list for PBXNativeTarget "SmogWatchForWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38F2BB6121936AA700035BB4 /* Debug */,
+				38F2BB6221936AA700035BB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38F2BB6521936AA700035BB4 /* Build configuration list for PBXNativeTarget "SmogWatchForWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38F2BB5F21936AA700035BB4 /* Debug */,
+				38F2BB6021936AA700035BB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

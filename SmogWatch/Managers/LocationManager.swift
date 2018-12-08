@@ -25,11 +25,12 @@ class LocationManager {
     }
 
     func showLocationPreviouslyDeniedAlert(on viewController: UIViewController) {
-        let title = "Brak zgody na lokalizację użytkownika"
-        let message = "Nie zezwoliłeś wcześniej na dostęp do lokalizacji, by to zmienić przejdź do ustawień i zezwól aplikacji na korzystanie z lokalizacji użytkownika"
-        let alertController = UIAlertController (title: title, message: message, preferredStyle: .alert)
 
-        let settingsAction = UIAlertAction(title: "Przejdź do ustawień", style: .default) { _ in
+        let alertController = UIAlertController (title: Texts.LocalizationDeniedAlert.title,
+                                                 message: Texts.LocalizationDeniedAlert.message,
+                                                 preferredStyle: .alert)
+
+        let settingsAction = UIAlertAction(title: Texts.LocalizationDeniedAlert.settingsAction, style: .default) { _ in
             guard let settingsUrl = URL(string: UIApplication.openSettingsURLString) else { return }
 
             if UIApplication.shared.canOpenURL(settingsUrl) {
@@ -37,7 +38,7 @@ class LocationManager {
             }
         }
         alertController.addAction(settingsAction)
-        let cancelAction = UIAlertAction(title: "Anuluj", style: .default) { _ in
+        let cancelAction = UIAlertAction(title: Texts.General.cancel, style: .default) { _ in
         }
         alertController.addAction(cancelAction)
 
